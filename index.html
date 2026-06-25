@@ -1313,94 +1313,54 @@
       opacity: 1;
     }
 
-    /* --- Instagram Strip --- */
-    #instagram-strip {
-      padding: var(--space-md) 0;
+    /* --- Visit Us CTA --- */
+    .visit-cta-strip {
+      background: #1a1a1a;
       border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: 5rem 2rem;
       text-align: center;
     }
-
-    .insta-meta {
-      margin-bottom: 1.25rem;
+    .visit-cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
     }
-
-    .insta-meta .eyebrow {
-      display: block;
-      margin-bottom: 0.4rem;
-    }
-
-    .insta-handle {
+    .visit-cta-strip h2 {
       font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 400;
+      font-size: clamp(28px, 4vw, 48px);
       color: var(--color-white);
-      text-decoration: none;
-      transition: color var(--transition);
+      font-weight: 400;
+      margin: 0.5rem 0 1rem;
     }
-
-    .insta-handle:hover {
-      color: var(--color-gold);
+    .visit-cta-strip p {
+      font-size: 15px;
+      color: var(--color-muted);
+      margin-bottom: 2rem;
+      line-height: 1.7;
     }
-
-    .insta-subtext {
-      display: block;
-      font-family: var(--font-body);
+    .visit-cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .visit-meta {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .visit-meta span {
       font-size: 13px;
       color: var(--color-muted);
-      margin-top: 0.4rem;
-    }
-
-    .insta-grid {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 var(--space-md);
-    }
-
-    .insta-tile {
-      width: calc(16.66% - 0.75rem);
-      aspect-ratio: 1 / 1;
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: 4px;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-      flex-shrink: 0;
-    }
-
-    @media (max-width: 480px) {
-      .insta-tile {
-        width: calc(33.33% - 0.75rem);
-      }
-    }
-
-    .insta-tile-overlay {
-      position: absolute;
-      inset: 0;
       display: flex;
       align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0);
-      transition: background 0.25s ease;
+      gap: 6px;
     }
-
-    .insta-tile-overlay .ti {
-      font-size: 24px;
-      color: var(--color-white);
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-
-    .insta-tile:hover .insta-tile-overlay {
-      background: rgba(0, 0, 0, 0.5);
-    }
-
-    .insta-tile:hover .insta-tile-overlay .ti {
-      opacity: 1;
+    .visit-meta i {
+      color: var(--color-gold);
+      font-size: 15px;
     }
 
     /* =============================================
@@ -2948,59 +2908,26 @@
 
       </div><!-- /section-inner -->
 
-      <!-- Instagram Strip -->
-      <div id="instagram-strip" class="reveal" aria-label="Follow us on Instagram">
-        <div class="section-inner">
-
-          <div class="insta-meta">
-            <span class="eyebrow">Follow Us</span>
-            <a href="https://instagram.com" class="insta-handle" target="_blank" rel="noopener noreferrer"
-              aria-label="The Spice Story on Instagram">@thespicestory</a>
-            <span class="insta-subtext">Tag us in your meals for a chance to be featured.</span>
+      <!-- Visit Us CTA -->
+      <section class="visit-cta-strip reveal">
+        <div class="visit-cta-inner">
+          <span class="eyebrow">JODHPUR'S FINEST VEGETARIAN DINING</span>
+          <h2>Come Experience It in Person</h2>
+          <p>Rooftop seating fills up fast — especially on weekends. Reserve your table in advance.</p>
+          <div class="visit-cta-buttons">
+            <a href="#reserve" class="btn-primary">Reserve a Table</a>
+            <a href="https://wa.me/919001890329" target="_blank" rel="noopener" class="btn-outline">
+              <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+              WhatsApp Us
+            </a>
           </div>
-
-          <div class="insta-grid">
-
-            <!-- 1 -->
-            <div class="insta-tile">
-              <!-- CLIENT: embed real Instagram post -->
-              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
-            </div>
-
-            <!-- 2 -->
-            <div class="insta-tile">
-              <!-- CLIENT: embed real Instagram post -->
-              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
-            </div>
-
-            <!-- 3 -->
-            <div class="insta-tile">
-              <!-- CLIENT: embed real Instagram post -->
-              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
-            </div>
-
-            <!-- 4 -->
-            <div class="insta-tile">
-              <!-- CLIENT: embed real Instagram post -->
-              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
-            </div>
-
-            <!-- 5 -->
-            <div class="insta-tile">
-              <!-- CLIENT: embed real Instagram post -->
-              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
-            </div>
-
-            <!-- 6 -->
-            <div class="insta-tile">
-              <!-- CLIENT: embed real Instagram post -->
-              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
-            </div>
-
-          </div><!-- /insta-grid -->
-
+          <div class="visit-meta">
+            <span><i class="ti ti-map-pin" aria-hidden="true"></i> Ratanada, Jodhpur</span>
+            <span><i class="ti ti-clock" aria-hidden="true"></i> Open until 11:30 PM</span>
+            <span><i class="ti ti-phone" aria-hidden="true"></i> 090018 90329</span>
+          </div>
         </div>
-      </div><!-- /instagram-strip -->
+      </section>
 
     </section>
 
