@@ -1087,10 +1087,66 @@
       display: none;
     }
 
-    /* --- View Full Menu CTA --- */
-    .menu-cta-wrap {
+    /* --- Chef's Picks Banner --- */
+    #chefs-picks {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .chefs-picks-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .chefs-picks-inner {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+    .chefs-pick-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: 13px;
+    }
+    .chefs-pick-icon {
+      color: var(--color-gold);
+      font-size: 16px;
+    }
+    .chefs-pick-name {
+      color: var(--color-white);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .chefs-pick-label {
+      color: var(--color-muted);
+      font-style: italic;
+    }
+
+    /* --- Download Menu CTA --- */
+    .menu-download-wrap {
       text-align: center;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
+      padding: 3rem 2rem;
+      background: var(--color-surface);
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+    }
+    .menu-download-hint {
+      font-family: var(--font-display);
+      font-size: 28px;
+      color: var(--color-white);
+      margin-bottom: 1.5rem;
+    }
+    .menu-download-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     /* =============================================
@@ -2192,7 +2248,7 @@
         <!-- Price -->
         <div class="info-item">
           <i class="ti ti-currency-rupee" aria-hidden="true"></i>
-          <span class="info-item-text"><strong>â‚¹400â€“600</strong> per person</span>
+          <span class="info-item-text"><strong>400 - 600</strong> per person</span>
         </div>
 
         <!-- Vegetarian -->
@@ -2238,7 +2294,8 @@
           </div>
 
           <!-- Right column: image -->
-          <img src="./galary/image-one-about.jpeg" alt="Interior of The Spice Story" class="story-image reveal" style="transition-delay: 0.15s;">
+          <img src="./galary/image-one-about.jpeg" alt="Interior of The Spice Story" class="story-image reveal"
+            style="transition-delay: 0.15s;">
 
         </div>
       </div>
@@ -2304,18 +2361,18 @@
           </div>
 
           <div class="stat-item">
-            <span class="stat-number" id="stat-guests" aria-label="Over 3308 happy guests">0</span>
+            <span class="stat-number" id="stat-guests" aria-label="Over 3308 happy guests">3500+</span>
             <span class="stat-label">Happy Guests</span>
           </div>
 
           <div class="stat-item">
-            <span class="stat-number" id="stat-veg" aria-label="100% vegetarian">0%</span>
+            <span class="stat-number" id="stat-veg" aria-label="100% vegetarian">100%</span>
             <span class="stat-label">Vegetarian</span>
           </div>
 
           <div class="stat-item">
-            <span class="stat-number" id="stat-years" aria-label="Over 10 years of excellence">0</span>
-            <span class="stat-label">Of Excellence</span>
+            <span class="stat-number" id="stat-years" aria-label="Over 10 years of excellence">10</span>
+            <span class="stat-label">Years Of Excellence</span>
           </div>
 
         </div>
