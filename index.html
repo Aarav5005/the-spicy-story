@@ -610,6 +610,239 @@
         max-width: 960px;
       }
     }
+
+    /* =============================================
+       PHASE 2 — REVEAL ANIMATION (shared)
+    ============================================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* =============================================
+       PHASE 2 — SECTION SHARED UTILITIES
+    ============================================= */
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    .eyebrow {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 48px);
+      font-weight: 400;
+      color: var(--color-white);
+      line-height: 1.15;
+    }
+
+    .gold-rule {
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: var(--color-gold);
+      margin: 0.75rem 0 1.25rem 0;
+      border: none;
+    }
+
+    /* =============================================
+       PHASE 2 — OUR STORY
+    ============================================= */
+    #our-story {
+      padding: var(--space-lg) 0;
+      background: var(--color-bg);
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      align-items: center;
+    }
+
+    .story-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .story-body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--color-muted);
+      margin-top: 1.25rem;
+    }
+
+    .story-body + .story-body {
+      margin-top: 1rem;
+    }
+
+    /* Right column image placeholder */
+    .story-image-placeholder {
+      aspect-ratio: 4 / 3;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .story-image-placeholder::after {
+      content: 'Photo coming soon';
+      font-family: var(--font-body);
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--color-border);
+      color: rgba(255,255,255,0.2);
+    }
+
+    @media (min-width: 768px) {
+      .story-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-lg);
+      }
+    }
+
+    /* =============================================
+       PHASE 2 — EXPERIENCE CARDS
+    ============================================= */
+    #experience {
+      padding: var(--space-lg) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .experience-header {
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .exp-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-top: 3px solid var(--color-gold);
+      border-radius: 0;
+      padding: var(--space-md);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .exp-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--color-gold);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .exp-card-icon {
+      font-size: 28px;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+      display: block;
+      line-height: 1;
+    }
+
+    .exp-card-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--color-white);
+      margin-bottom: 0.75rem;
+    }
+
+    .exp-card-desc {
+      font-family: var(--font-body);
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--color-muted);
+    }
+
+    @media (min-width: 768px) {
+      .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* =============================================
+       PHASE 2 — STATS STRIP
+    ============================================= */
+    #stats-strip {
+      background: #1a1a1a;
+      padding: var(--space-lg) 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 1rem;
+      text-align: center;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 400;
+      color: var(--color-gold);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+
+    @media (min-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+      }
+
+      /* Vertical dividers between stat items */
+      .stat-item:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
   </style>
 </head>
 <body>
@@ -773,6 +1006,119 @@
       </div>
     </section>
 
+    <!-- INSERT AFTER QUICK INFO BAR -->
+
+    <!-- =============================================
+         PHASE 2 — OUR STORY
+    ============================================= -->
+    <section id="our-story" aria-labelledby="story-heading">
+      <div class="section-inner">
+        <div class="story-grid">
+
+          <!-- Left column: text -->
+          <div class="story-text reveal">
+            <span class="eyebrow">Our Story</span>
+            <hr class="gold-rule" aria-hidden="true">
+            <h2 class="section-h2" id="story-heading">Rooted in Tradition,<br>Elevated in Taste</h2>
+            <p class="story-body">
+              Born in the heart of Jodhpur, The Spice Story was built on one belief — that vegetarian food
+              deserves the same grandeur as any fine dining experience. Every dish we serve carries the
+              heritage of Rajasthani flavors, reimagined for the modern table.
+            </p>
+            <p class="story-body">
+              From our open-air rooftop to our carefully curated menu, every detail is designed to make
+              your meal a memory.
+            </p>
+          </div>
+
+          <!-- Right column: image placeholder -->
+          <!-- CLIENT: replace with interior/chef photo -->
+          <div class="story-image-placeholder reveal" style="transition-delay: 0.15s;" aria-label="Interior photo of The Spice Story — coming soon"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PHASE 2 — EXPERIENCE CARDS
+    ============================================= -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-inner">
+
+        <header class="experience-header reveal">
+          <span class="eyebrow">The Experience</span>
+          <h2 class="section-h2" id="experience-heading">Three Ways to Dine</h2>
+        </header>
+
+        <div class="cards-grid">
+
+          <!-- Card 1: Rooftop Dining -->
+          <article class="exp-card reveal" style="transition-delay: 0.1s;" aria-label="Rooftop Dining experience">
+            <i class="ti ti-sun exp-card-icon" aria-hidden="true"></i>
+            <h3 class="exp-card-title">Rooftop Dining</h3>
+            <p class="exp-card-desc">
+              Dine under open skies with a panoramic view of Jodhpur. The perfect setting
+              for evenings that deserve to be remembered.
+            </p>
+          </article>
+
+          <!-- Card 2: Fine Dine Hall -->
+          <article class="exp-card reveal" style="transition-delay: 0.2s;" aria-label="Fine Dine Hall experience">
+            <i class="ti ti-armchair exp-card-icon" aria-hidden="true"></i>
+            <h3 class="exp-card-title">Fine Dine Hall</h3>
+            <p class="exp-card-desc">
+              An intimate air-conditioned space curated for family celebrations, anniversaries,
+              and corporate gatherings.
+            </p>
+          </article>
+
+          <!-- Card 3: Private Events -->
+          <article class="exp-card reveal" style="transition-delay: 0.3s;" aria-label="Private Events experience">
+            <i class="ti ti-confetti exp-card-icon" aria-hidden="true"></i>
+            <h3 class="exp-card-title">Private Events</h3>
+            <p class="exp-card-desc">
+              Exclusive venue booking for weddings, kitty parties, and special occasions.
+              Customised menus available.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         PHASE 2 — STATS STRIP
+    ============================================= -->
+    <section id="stats-strip" aria-label="Restaurant statistics" class="reveal">
+      <div class="section-inner">
+        <div class="stats-grid">
+
+          <div class="stat-item">
+            <span class="stat-number" id="stat-rating" aria-label="4.7 star Google rating">4.7★</span>
+            <span class="stat-label">Google Rating</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" id="stat-guests" aria-label="Over 3308 happy guests">0</span>
+            <span class="stat-label">Happy Guests</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" id="stat-veg" aria-label="100% vegetarian">0%</span>
+            <span class="stat-label">Vegetarian</span>
+          </div>
+
+          <div class="stat-item">
+            <span class="stat-number" id="stat-years" aria-label="Over 10 years of excellence">0</span>
+            <span class="stat-label">Of Excellence</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PHASE 2 COMPLETE -->
+
   </main>
 
   <!-- Schema.org JSON-LD — Local Business Rich Result -->
@@ -903,5 +1249,75 @@
   </script>
 
   <!-- PHASE 1 COMPLETE -->
+
+  <!-- CountUp.js CDN (Phase 2 — Stats Strip) -->
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.6.2/dist/countUp.umd.js" defer></script>
+
+  <!-- Phase 2 JS: Reveal Observer + CountUp trigger -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* --- Scroll Reveal (IntersectionObserver) --- */
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            revealObserver.unobserve(e.target); // fire once only
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.reveal').forEach(function (el) {
+        revealObserver.observe(el);
+      });
+
+      /* --- CountUp — trigger when stats strip enters viewport --- */
+      var statsTriggered = false;
+
+      var statsObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting && !statsTriggered) {
+            statsTriggered = true;
+            statsObserver.disconnect();
+
+            // Wait for CountUp.js to load (it's deferred)
+            function runCountUps() {
+              if (typeof CountUp === 'undefined') {
+                setTimeout(runCountUps, 100);
+                return;
+              }
+
+              // Guests: 0 → 3308
+              var guests = new CountUp('stat-guests', 3308, { duration: 2.5, separator: ',' });
+              if (!guests.error) guests.start();
+
+              // Vegetarian: 0% → 100%
+              var veg = new CountUp('stat-veg', 100, {
+                duration: 2,
+                suffix: '%'
+              });
+              if (!veg.error) veg.start();
+
+              // Years: 0 → 10
+              var years = new CountUp('stat-years', 10, {
+                duration: 2,
+                suffix: '+ Yrs'
+              });
+              if (!years.error) years.start();
+
+              // Rating stays static (displayed as 4.7★ already)
+            }
+
+            runCountUps();
+          }
+        });
+      }, { threshold: 0.3 });
+
+      var statsStrip = document.getElementById('stats-strip');
+      if (statsStrip) statsObserver.observe(statsStrip);
+
+    }());
+  </script>
 </body>
 </html>
