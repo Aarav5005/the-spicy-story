@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- =============================================
        THE SPICE STORY â€” Phase 1: Navbar + Hero + Info Bar
@@ -11,28 +12,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Spice Story | Best Vegetarian Restaurant &amp; Rooftop Fine Dine in Jodhpur</title>
-  <meta name="description" content="The Spice Story — Jodhpur's best vegetarian rooftop fine dining restaurant. 4.7&#9733; rated. Authentic Rajasthani cuisine. Book your table today. ₹400–600/person.">
-  <meta name="keywords" content="vegetarian restaurant Jodhpur, rooftop restaurant Jodhpur, fine dining Jodhpur, best veg restaurant Jodhpur, The Spice Story Ratanada">
+  <meta name="description"
+    content="The Spice Story — Jodhpur's best vegetarian rooftop fine dining restaurant. 4.7&#9733; rated. Authentic Rajasthani cuisine. Book your table today. ₹400–600/person.">
+  <meta name="keywords"
+    content="vegetarian restaurant Jodhpur, rooftop restaurant Jodhpur, fine dining Jodhpur, best veg restaurant Jodhpur, The Spice Story Ratanada">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.thespicestory.com/">
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
-  <meta property="og:description" content="4.7★ vegetarian fine dining on a rooftop in the heart of Jodhpur. Book a table today.">
+  <meta property="og:description"
+    content="4.7★ vegetarian fine dining on a rooftop in the heart of Jodhpur. Book a table today.">
   <meta property="og:image" content="https://www.thespicestory.com/images/og-cover.webp">
   <meta property="og:url" content="https://www.thespicestory.com/">
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
-  <meta name="twitter:description" content="Best vegetarian fine dining in Jodhpur. 4.7&#9733; &middot; ₹400–600 · Rooftop.">
+  <meta name="twitter:description"
+    content="Best vegetarian fine dining in Jodhpur. 4.7&#9733; &middot; ₹400–600 · Rooftop.">
   <meta name="geo.region" content="IN-RJ">
   <meta name="geo.placename" content="Jodhpur">
   <meta name="geo.position" content="26.279327;73.037535">
-  
+
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
+    rel="stylesheet">
 
   <!-- Tabler Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -42,28 +49,30 @@
        BRAND TOKENS
     ============================================= */
     :root {
-      --color-gold:      #d39121;
+      --color-gold: #d39121;
       --color-gold-dark: #b07818;
-      --color-bg:        #2a2a2a;
-      --color-surface:   #383632;
-      --color-white:     #ffffff;
-      --color-muted:     #a0a0a0;
-      --color-border:    rgba(255, 255, 255, 0.08);
-      --font-display:    'Cormorant Garamond', serif;
-      --font-body:       'Schibsted Grotesk', sans-serif;
-      --space-xs:        0.5rem;
-      --space-sm:        1rem;
-      --space-md:        2rem;
-      --space-lg:        4rem;
-      --space-xl:        8rem;
-      --radius-sm:       4px;
-      --transition:      0.2s ease;
+      --color-bg: #2a2a2a;
+      --color-surface: #383632;
+      --color-white: #ffffff;
+      --color-muted: #a0a0a0;
+      --color-border: rgba(255, 255, 255, 0.08);
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'Schibsted Grotesk', sans-serif;
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 8rem;
+      --radius-sm: 4px;
+      --transition: 0.2s ease;
     }
 
     /* =============================================
        RESET + BASE
     ============================================= */
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
@@ -208,9 +217,11 @@
     .hamburger.is-open span:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
+
     .hamburger.is-open span:nth-child(2) {
       opacity: 0;
     }
+
     .hamburger.is-open span:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
     }
@@ -304,15 +315,13 @@
          background-size: cover;
          background-position: center;
       */
-      background: linear-gradient(
-        135deg,
-        #1a1208 0%,
-        #2d1f05 20%,
-        #1e1a12 40%,
-        #0d0c0a 60%,
-        #1a1510 80%,
-        #0f0d08 100%
-      );
+      background: linear-gradient(135deg,
+          #1a1208 0%,
+          #2d1f05 20%,
+          #1e1a12 40%,
+          #0d0c0a 60%,
+          #1a1510 80%,
+          #0f0d08 100%);
       z-index: 0;
     }
 
@@ -507,8 +516,15 @@
     }
 
     @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50%       { transform: translateY(7px); }
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(7px);
+      }
     }
 
     /* =============================================
@@ -564,13 +580,16 @@
        REDUCED MOTION
     ============================================= */
     @media (prefers-reduced-motion: reduce) {
-      .scroll-arrow { animation: none; }
+      .scroll-arrow {
+        animation: none;
+      }
     }
 
     /* =============================================
        RESPONSIVE â€” TABLET & DESKTOP (min-width: 768px)
     ============================================= */
     @media (min-width: 768px) {
+
       /* Show center nav links */
       .nav-links {
         display: flex;
@@ -614,12 +633,18 @@
       transform: translateY(24px);
       transition: opacity 0.55s ease, transform 0.55s ease;
     }
+
     .reveal.visible {
       opacity: 1;
       transform: none;
     }
+
     @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; transition: none; }
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
     }
 
     /* =============================================
@@ -688,7 +713,7 @@
       margin-top: 1.25rem;
     }
 
-    .story-body + .story-body {
+    .story-body+.story-body {
       margin-top: 1rem;
     }
 
@@ -712,7 +737,7 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--color-border);
-      color: rgba(255,255,255,0.2);
+      color: rgba(255, 255, 255, 0.2);
     }
 
     @media (min-width: 768px) {
@@ -896,7 +921,7 @@
 
     .tab-btn:hover {
       color: var(--color-white);
-      border-color: rgba(255,255,255,0.2);
+      border-color: rgba(255, 255, 255, 0.2);
     }
 
     .tab-btn.active {
@@ -1076,931 +1101,961 @@
       text-align: center;
       margin-top: 2.5rem;
     }
-  /* =============================================
+
+    /* =============================================
      PHASE 4 — GALLERY SECTION
   ============================================= */
-  #gallery {
-    padding: var(--space-lg) 0;
-    background: var(--color-bg);
-    border-top: 1px solid var(--color-border);
-  }
-
-  .gallery-header {
-    text-align: center;
-    margin-bottom: var(--space-md);
-  }
-
-  .gallery-subtext {
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    max-width: 520px;
-    margin: 0.75rem auto 0;
-    line-height: 1.7;
-  }
-
-  /* --- Gallery tab bar (reuses .tab-btn from Phase 3) --- */
-  .gallery-tabs-wrap {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    margin-bottom: 2rem;
-  }
-  .gallery-tabs-wrap::-webkit-scrollbar { display: none; }
-
-  .gallery-tabs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    white-space: nowrap;
-    min-width: max-content;
-    margin: 0 auto;
-    padding: 0 var(--space-md);
-  }
-
-  /* --- Masonry columns --- */
-  .masonry-grid {
-    columns: 3;
-    column-gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--space-md);
-  }
-
-  @media (max-width: 768px) {
-    .masonry-grid { columns: 2; }
-  }
-
-  @media (max-width: 480px) {
-    .masonry-grid { columns: 1; }
-  }
-
-  /* Critical masonry fix: inline-block keeps items in column flow */
-  .gallery-item {
-    display: inline-block;
-    width: 100%;
-    opacity: 1;
-    transition: opacity 0.3s;
-  }
-
-  .gallery-item.hidden {
-    opacity: 0;
-    height: 0;
-    margin: 0;
-    overflow: hidden;
-    pointer-events: none;
-  }
-
-  /* Height variants */
-  .gallery-item.short  .gallery-placeholder { height: 220px; }
-  .gallery-item.medium .gallery-placeholder { height: 280px; }
-  .gallery-item.tall   .gallery-placeholder { height: 340px; }
-
-  /* Placeholder box */
-  .gallery-placeholder {
-    width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    border: 1px solid var(--color-border);
-  }
-
-  /* Background colour variants */
-  .gallery-item:nth-child(1)  .gallery-placeholder,
-  .gallery-item:nth-child(5)  .gallery-placeholder,
-  .gallery-item:nth-child(9)  .gallery-placeholder,
-  .gallery-item:nth-child(13) .gallery-placeholder {
-    background: var(--color-surface);
-  }
-  .gallery-item:nth-child(2)  .gallery-placeholder,
-  .gallery-item:nth-child(6)  .gallery-placeholder,
-  .gallery-item:nth-child(10) .gallery-placeholder,
-  .gallery-item:nth-child(14) .gallery-placeholder {
-    background: #2f2d2a;
-  }
-  .gallery-item:nth-child(3)  .gallery-placeholder,
-  .gallery-item:nth-child(7)  .gallery-placeholder,
-  .gallery-item:nth-child(11) .gallery-placeholder,
-  .gallery-item:nth-child(15) .gallery-placeholder {
-    background: #323030;
-  }
-  .gallery-item:nth-child(4)  .gallery-placeholder,
-  .gallery-item:nth-child(8)  .gallery-placeholder,
-  .gallery-item:nth-child(12) .gallery-placeholder,
-  .gallery-item:nth-child(16) .gallery-placeholder,
-  .gallery-item:nth-child(17) .gallery-placeholder,
-  .gallery-item:nth-child(18) .gallery-placeholder {
-    background: #2a2f2a;
-  }
-
-  /* Overlay hover effect */
-  .gallery-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.25s ease;
-  }
-
-  .gallery-overlay .ti {
-    font-size: 28px;
-    color: var(--color-white);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-
-  .gallery-placeholder:hover .gallery-overlay {
-    background: rgba(0, 0, 0, 0.55);
-  }
-
-  .gallery-placeholder:hover .gallery-overlay .ti {
-    opacity: 1;
-  }
-
-  /* --- Instagram Strip --- */
-  #instagram-strip {
-    padding: var(--space-md) 0;
-    border-top: 1px solid var(--color-border);
-    text-align: center;
-  }
-
-  .insta-meta {
-    margin-bottom: 1.25rem;
-  }
-
-  .insta-meta .eyebrow {
-    display: block;
-    margin-bottom: 0.4rem;
-  }
-
-  .insta-handle {
-    font-family: var(--font-display);
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--color-white);
-    text-decoration: none;
-    transition: color var(--transition);
-  }
-
-  .insta-handle:hover { color: var(--color-gold); }
-
-  .insta-subtext {
-    display: block;
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--color-muted);
-    margin-top: 0.4rem;
-  }
-
-  .insta-grid {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--space-md);
-  }
-
-  .insta-tile {
-    width: calc(16.66% - 0.75rem);
-    aspect-ratio: 1 / 1;
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 480px) {
-    .insta-tile {
-      width: calc(33.33% - 0.75rem);
+    #gallery {
+      padding: var(--space-lg) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
     }
-  }
 
-  .insta-tile-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0);
-    transition: background 0.25s ease;
-  }
+    .gallery-header {
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
 
-  .insta-tile-overlay .ti {
-    font-size: 24px;
-    color: var(--color-white);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
+    .gallery-subtext {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      max-width: 520px;
+      margin: 0.75rem auto 0;
+      line-height: 1.7;
+    }
 
-  .insta-tile:hover .insta-tile-overlay {
-    background: rgba(0, 0, 0, 0.5);
-  }
+    /* --- Gallery tab bar (reuses .tab-btn from Phase 3) --- */
+    .gallery-tabs-wrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      margin-bottom: 2rem;
+    }
 
-  .insta-tile:hover .insta-tile-overlay .ti {
-    opacity: 1;
-  }
+    .gallery-tabs-wrap::-webkit-scrollbar {
+      display: none;
+    }
 
-  /* =============================================
+    .gallery-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+      min-width: max-content;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    /* --- Masonry columns --- */
+    .masonry-grid {
+      columns: 3;
+      column-gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    @media (max-width: 768px) {
+      .masonry-grid {
+        columns: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .masonry-grid {
+        columns: 1;
+      }
+    }
+
+    /* Critical masonry fix: inline-block keeps items in column flow */
+    .gallery-item {
+      display: inline-block;
+      width: 100%;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item.hidden {
+      opacity: 0;
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    /* Height variants */
+    .gallery-item.short .gallery-placeholder {
+      height: 220px;
+    }
+
+    .gallery-item.medium .gallery-placeholder {
+      height: 280px;
+    }
+
+    .gallery-item.tall .gallery-placeholder {
+      height: 340px;
+    }
+
+    /* Placeholder box */
+    .gallery-placeholder {
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid var(--color-border);
+    }
+
+    /* Background colour variants */
+    .gallery-item:nth-child(1) .gallery-placeholder,
+    .gallery-item:nth-child(5) .gallery-placeholder,
+    .gallery-item:nth-child(9) .gallery-placeholder,
+    .gallery-item:nth-child(13) .gallery-placeholder {
+      background: var(--color-surface);
+    }
+
+    .gallery-item:nth-child(2) .gallery-placeholder,
+    .gallery-item:nth-child(6) .gallery-placeholder,
+    .gallery-item:nth-child(10) .gallery-placeholder,
+    .gallery-item:nth-child(14) .gallery-placeholder {
+      background: #2f2d2a;
+    }
+
+    .gallery-item:nth-child(3) .gallery-placeholder,
+    .gallery-item:nth-child(7) .gallery-placeholder,
+    .gallery-item:nth-child(11) .gallery-placeholder,
+    .gallery-item:nth-child(15) .gallery-placeholder {
+      background: #323030;
+    }
+
+    .gallery-item:nth-child(4) .gallery-placeholder,
+    .gallery-item:nth-child(8) .gallery-placeholder,
+    .gallery-item:nth-child(12) .gallery-placeholder,
+    .gallery-item:nth-child(16) .gallery-placeholder,
+    .gallery-item:nth-child(17) .gallery-placeholder,
+    .gallery-item:nth-child(18) .gallery-placeholder {
+      background: #2a2f2a;
+    }
+
+    /* Overlay hover effect */
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.25s ease;
+    }
+
+    .gallery-overlay .ti {
+      font-size: 28px;
+      color: var(--color-white);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .gallery-placeholder:hover .gallery-overlay {
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .gallery-placeholder:hover .gallery-overlay .ti {
+      opacity: 1;
+    }
+
+    /* --- Instagram Strip --- */
+    #instagram-strip {
+      padding: var(--space-md) 0;
+      border-top: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    .insta-meta {
+      margin-bottom: 1.25rem;
+    }
+
+    .insta-meta .eyebrow {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .insta-handle {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--color-white);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+
+    .insta-handle:hover {
+      color: var(--color-gold);
+    }
+
+    .insta-subtext {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-muted);
+      margin-top: 0.4rem;
+    }
+
+    .insta-grid {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    .insta-tile {
+      width: calc(16.66% - 0.75rem);
+      aspect-ratio: 1 / 1;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .insta-tile {
+        width: calc(33.33% - 0.75rem);
+      }
+    }
+
+    .insta-tile-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0);
+      transition: background 0.25s ease;
+    }
+
+    .insta-tile-overlay .ti {
+      font-size: 24px;
+      color: var(--color-white);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .insta-tile:hover .insta-tile-overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .insta-tile:hover .insta-tile-overlay .ti {
+      opacity: 1;
+    }
+
+    /* =============================================
      PHASE 5 — REVIEWS SECTION
   ============================================= */
-  #reviews {
-    padding: var(--space-lg) 0;
-    background: var(--color-bg);
-    border-top: 1px solid var(--color-border);
-  }
+    #reviews {
+      padding: var(--space-lg) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
 
-  .reviews-header {
-    text-align: center;
-    margin-bottom: var(--space-md);
-  }
+    .reviews-header {
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
 
-  .reviews-subtext {
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    max-width: 520px;
-    margin: 0.75rem auto 0.75rem;
-    line-height: 1.7;
-  }
+    .reviews-subtext {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      max-width: 520px;
+      margin: 0.75rem auto 0.75rem;
+      line-height: 1.7;
+    }
 
-  /* Google rating badge */
-  .google-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 0.5rem;
-    text-decoration: none;
-  }
+    /* Google rating badge */
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+      text-decoration: none;
+    }
 
-  .g-logo {
-    width: 18px;
-    height: 18px;
-    background: #4285f4;
-    color: var(--color-white);
-    font-size: 11px;
-    font-weight: 700;
-    border-radius: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-family: var(--font-body);
-  }
+    .g-logo {
+      width: 18px;
+      height: 18px;
+      background: #4285f4;
+      color: var(--color-white);
+      font-size: 11px;
+      font-weight: 700;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: var(--font-body);
+    }
 
-  .badge-rating-text {
-    font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--color-white);
-  }
+    .badge-rating-text {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-white);
+    }
 
-  .badge-stars {
-    color: var(--color-gold);
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
+    .badge-stars {
+      color: var(--color-gold);
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
 
-  .badge-count {
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--color-muted);
-  }
+    .badge-count {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-muted);
+    }
 
-  /* --- Swiper carousel --- */
-  .reviews-swiper {
-    padding-bottom: 48px !important;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
-  }
+    /* --- Swiper carousel --- */
+    .reviews-swiper {
+      padding-bottom: 48px !important;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: var(--space-md);
+      padding-right: var(--space-md);
+    }
 
-  /* Swiper nav arrows */
-  .reviews-swiper .swiper-button-prev,
-  .reviews-swiper .swiper-button-next {
-    color: var(--color-gold);
-    width: 36px;
-    height: 36px;
-  }
+    /* Swiper nav arrows */
+    .reviews-swiper .swiper-button-prev,
+    .reviews-swiper .swiper-button-next {
+      color: var(--color-gold);
+      width: 36px;
+      height: 36px;
+    }
 
-  .reviews-swiper .swiper-button-prev::after,
-  .reviews-swiper .swiper-button-next::after {
-    font-size: 18px;
-  }
+    .reviews-swiper .swiper-button-prev::after,
+    .reviews-swiper .swiper-button-next::after {
+      font-size: 18px;
+    }
 
-  /* Swiper pagination dots */
-  .reviews-swiper .swiper-pagination-bullet {
-    background: var(--color-muted);
-    opacity: 0.5;
-  }
+    /* Swiper pagination dots */
+    .reviews-swiper .swiper-pagination-bullet {
+      background: var(--color-muted);
+      opacity: 0.5;
+    }
 
-  .reviews-swiper .swiper-pagination-bullet-active {
-    background: var(--color-gold);
-    opacity: 1;
-  }
+    .reviews-swiper .swiper-pagination-bullet-active {
+      background: var(--color-gold);
+      opacity: 1;
+    }
 
-  /* --- Review card --- */
-  .review-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-top: 2px solid var(--color-gold);
-    border-radius: 4px;
-    padding: 1.75rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+    /* --- Review card --- */
+    .review-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-top: 2px solid var(--color-gold);
+      border-radius: 4px;
+      padding: 1.75rem;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
 
-  /* Card top row: avatar + name + date */
-  .review-top {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
+    /* Card top row: avatar + name + date */
+    .review-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
 
-  .review-avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--color-gold);
-    color: #1a1a1a;
-    font-family: var(--font-body);
-    font-size: 14px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    line-height: 1;
-  }
+    .review-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      color: #1a1a1a;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      line-height: 1;
+    }
 
-  .review-meta {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.15rem;
-  }
+    .review-meta {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
 
-  .review-name-row {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    flex-wrap: wrap;
-  }
+    .review-name-row {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
 
-  .review-name {
-    font-family: var(--font-body);
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--color-white);
-  }
+    .review-name {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-white);
+    }
 
-  .review-verified {
-    font-size: 14px;
-    color: #4285f4;
-    line-height: 1;
-  }
+    .review-verified {
+      font-size: 14px;
+      color: #4285f4;
+      line-height: 1;
+    }
 
-  .review-date {
-    font-family: var(--font-body);
-    font-size: 12px;
-    color: var(--color-muted);
-  }
+    .review-date {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--color-muted);
+    }
 
-  /* Stars */
-  .review-stars {
-    color: var(--color-gold);
-    letter-spacing: 2px;
-    font-size: 14px;
-    line-height: 1;
-  }
+    /* Stars */
+    .review-stars {
+      color: var(--color-gold);
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 1;
+    }
 
-  /* Review body text */
-  .review-text {
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 15px;
-    line-height: 1.7;
-    color: var(--color-muted);
-    flex: 1;
-  }
+    /* Review body text */
+    .review-text {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-muted);
+      flex: 1;
+    }
 
-  /* --- Write a review CTA --- */
-  .reviews-cta {
-    text-align: center;
-    margin-top: 2.5rem;
-  }
+    /* --- Write a review CTA --- */
+    .reviews-cta {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
 
-  .reviews-cta-hint {
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    margin-bottom: 1rem;
-  }
+    .reviews-cta-hint {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      margin-bottom: 1rem;
+    }
 
-  /* =============================================
+    /* =============================================
      PHASE 6 — RESERVATION SECTION
   ============================================= */
-  #reserve {
-    padding: var(--space-lg) 0;
-    background: var(--color-bg);
-    border-top: 1px solid var(--color-border);
-  }
+    #reserve {
+      padding: var(--space-lg) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
 
-  .reserve-header {
-    text-align: center;
-    margin-bottom: var(--space-md);
-  }
+    .reserve-header {
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
 
-  .reserve-subtext {
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    max-width: 520px;
-    margin: 0.75rem auto 0;
-    line-height: 1.7;
-  }
+    .reserve-subtext {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      max-width: 520px;
+      margin: 0.75rem auto 0;
+      line-height: 1.7;
+    }
 
-  /* Two-column grid */
-  .reserve-grid {
-    display: grid;
-    grid-template-columns: 55fr 45fr;
-    gap: 3rem;
-    align-items: start;
-  }
+    /* Two-column grid */
+    .reserve-grid {
+      display: grid;
+      grid-template-columns: 55fr 45fr;
+      gap: 3rem;
+      align-items: start;
+    }
 
-  @media (max-width: 768px) {
-    .reserve-grid { grid-template-columns: 1fr; }
-  }
+    @media (max-width: 768px) {
+      .reserve-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-  /* Form groups */
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 1.25rem;
-  }
+    /* Form groups */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 1.25rem;
+    }
 
-  .form-group label {
-    font-family: var(--font-body);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--color-muted);
-  }
+    .form-group label {
+      font-family: var(--font-body);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-muted);
+    }
 
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    color: var(--color-white);
-    font-family: var(--font-body);
-    font-size: 14px;
-    padding: 12px 16px;
-    width: 100%;
-    box-sizing: border-box;
-    transition: border-color 0.2s ease;
-    appearance: none;
-    -webkit-appearance: none;
-  }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      color: var(--color-white);
+      font-family: var(--font-body);
+      font-size: 14px;
+      padding: 12px 16px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+      appearance: none;
+      -webkit-appearance: none;
+    }
 
-  .form-group select {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23a0a0a0' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    padding-right: 36px;
-  }
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23a0a0a0' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+    }
 
-  .form-group select option {
-    background: var(--color-surface);
-    color: var(--color-white);
-  }
+    .form-group select option {
+      background: var(--color-surface);
+      color: var(--color-white);
+    }
 
-  .form-group textarea {
-    resize: vertical;
-    min-height: 90px;
-  }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
 
-  .form-group input:focus,
-  .form-group select:focus,
-  .form-group textarea:focus {
-    border-color: var(--color-gold);
-    outline: none;
-  }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--color-gold);
+      outline: none;
+    }
 
-  .form-group input.error,
-  .form-group select.error,
-  .form-group textarea.error {
-    border-color: #e53935;
-  }
+    .form-group input.error,
+    .form-group select.error,
+    .form-group textarea.error {
+      border-color: #e53935;
+    }
 
-  .field-error {
-    font-family: var(--font-body);
-    font-size: 12px;
-    color: #e53935;
-    display: none;
-    margin-top: 2px;
-  }
+    .field-error {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: #e53935;
+      display: none;
+      margin-top: 2px;
+    }
 
-  .field-error.visible {
-    display: block;
-  }
+    .field-error.visible {
+      display: block;
+    }
 
-  /* Full-width button */
-  .btn-full {
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 0.5rem;
-  }
+    /* Full-width button */
+    .btn-full {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 0.5rem;
+    }
 
-  /* Seating toggle pills */
-  .seating-group {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-top: 2px;
-  }
+    /* Seating toggle pills */
+    .seating-group {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
 
-  .seating-btn {
-    font-family: var(--font-body);
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--color-muted);
-    background: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: 20px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
+    .seating-btn {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--color-muted);
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 8px 16px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
 
-  .seating-btn:hover {
-    border-color: rgba(211,145,33,0.5);
-    color: var(--color-white);
-  }
+    .seating-btn:hover {
+      border-color: rgba(211, 145, 33, 0.5);
+      color: var(--color-white);
+    }
 
-  .seating-btn.active {
-    border-color: var(--color-gold);
-    background: var(--color-gold);
-    color: #1a1a1a;
-    font-weight: 600;
-  }
+    .seating-btn.active {
+      border-color: var(--color-gold);
+      background: var(--color-gold);
+      color: #1a1a1a;
+      font-weight: 600;
+    }
 
-  /* Direct call text below submit */
-  .form-call-hint {
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--color-muted);
-    text-align: center;
-    margin-top: 0.75rem;
-  }
+    /* Direct call text below submit */
+    .form-call-hint {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-muted);
+      text-align: center;
+      margin-top: 0.75rem;
+    }
 
-  .form-call-hint a {
-    color: var(--color-gold);
-    text-decoration: none;
-  }
+    .form-call-hint a {
+      color: var(--color-gold);
+      text-decoration: none;
+    }
 
-  .form-call-hint a:hover {
-    text-decoration: underline;
-  }
+    .form-call-hint a:hover {
+      text-decoration: underline;
+    }
 
-  /* Right column — contact info card */
-  .contact-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    padding: 1.5rem;
-    margin-bottom: 1.25rem;
-  }
+    /* Right column — contact info card */
+    .contact-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
 
-  .contact-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--color-border);
-  }
+    .contact-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
 
-  .contact-row:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
+    .contact-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
 
-  .contact-row:first-child {
-    padding-top: 0;
-  }
+    .contact-row:first-child {
+      padding-top: 0;
+    }
 
-  .contact-icon {
-    font-size: 18px;
-    color: var(--color-gold);
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
+    .contact-icon {
+      font-size: 18px;
+      color: var(--color-gold);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
 
-  .contact-text {
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    line-height: 1.5;
-  }
+    .contact-text {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
 
-  .contact-text a {
-    color: var(--color-gold);
-    text-decoration: none;
-  }
+    .contact-text a {
+      color: var(--color-gold);
+      text-decoration: none;
+    }
 
-  .contact-text a:hover {
-    text-decoration: underline;
-  }
+    .contact-text a:hover {
+      text-decoration: underline;
+    }
 
-  /* Booking success state */
-  .booking-success {
-    text-align: center;
-    padding: 3rem 1rem;
-  }
+    /* Booking success state */
+    .booking-success {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
 
-  .booking-success h3 {
-    font-family: var(--font-display);
-    font-size: 28px;
-    font-weight: 400;
-    color: var(--color-white);
-    margin: 1rem 0 0.5rem;
-  }
+    .booking-success h3 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 400;
+      color: var(--color-white);
+      margin: 1rem 0 0.5rem;
+    }
 
-  .booking-success p {
-    font-family: var(--font-body);
-    color: var(--color-muted);
-    font-size: 14px;
-    margin-bottom: 1.5rem;
-  }
+    .booking-success p {
+      font-family: var(--font-body);
+      color: var(--color-muted);
+      font-size: 14px;
+      margin-bottom: 1.5rem;
+    }
 
-  /* =============================================
+    /* =============================================
      PHASE 7 — FOOTER & FLOATING ELEMENTS
   ============================================= */
-  footer {
-    background: #111111;
-    padding: 4rem 2rem 2rem;
-    border-top: 1px solid var(--color-border);
-  }
+    footer {
+      background: #111111;
+      padding: 4rem 2rem 2rem;
+      border-top: 1px solid var(--color-border);
+    }
 
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-  @media (max-width: 900px) {
-    .footer-grid { grid-template-columns: repeat(2, 1fr); }
-  }
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
 
-  @media (max-width: 480px) {
-    .footer-grid { grid-template-columns: 1fr; }
-  }
+    @media (max-width: 480px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
-  .footer-heading {
-    font-family: var(--font-body);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--color-gold);
-    margin-bottom: 1rem;
-  }
+    .footer-heading {
+      font-family: var(--font-body);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+    }
 
-  .footer-brand h3 {
-    font-family: var(--font-display);
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--color-gold);
-    margin: 0 0 0.5rem;
-  }
+    .footer-brand h3 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--color-gold);
+      margin: 0 0 0.5rem;
+    }
 
-  .footer-brand p {
-    font-family: var(--font-body);
-    font-style: italic;
-    font-size: 13px;
-    color: var(--color-muted);
-    margin: 0;
-  }
+    .footer-brand p {
+      font-family: var(--font-body);
+      font-style: italic;
+      font-size: 13px;
+      color: var(--color-muted);
+      margin: 0;
+    }
 
-  .footer-social {
-    display: flex;
-    gap: 12px;
-    margin-top: 1rem;
-  }
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 1rem;
+    }
 
-  .footer-social a {
-    color: var(--color-muted);
-    font-size: 20px;
-    transition: color 0.2s ease;
-  }
+    .footer-social a {
+      color: var(--color-muted);
+      font-size: 20px;
+      transition: color 0.2s ease;
+    }
 
-  .footer-social a:hover {
-    color: var(--color-gold);
-  }
+    .footer-social a:hover {
+      color: var(--color-gold);
+    }
 
-  .footer-links a,
-  .footer-contact a {
-    display: block;
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    text-decoration: none;
-    margin-bottom: 8px;
-    transition: color 0.2s ease;
-  }
+    .footer-links a,
+    .footer-contact a {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: color 0.2s ease;
+    }
 
-  .footer-links a:hover,
-  .footer-contact a:hover {
-    color: var(--color-gold);
-  }
+    .footer-links a:hover,
+    .footer-contact a:hover {
+      color: var(--color-gold);
+    }
 
-  .footer-contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    margin-bottom: 12px;
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    line-height: 1.5;
-  }
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      line-height: 1.5;
+    }
 
-  .footer-contact-item i {
-    color: var(--color-gold);
-    font-size: 16px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
+    .footer-contact-item i {
+      color: var(--color-gold);
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
 
-  .footer-hours-item {
-    font-family: var(--font-body);
-    font-size: 14px;
-    color: var(--color-muted);
-    margin-bottom: 8px;
-  }
+    .footer-hours-item {
+      font-family: var(--font-body);
+      font-size: 14px;
+      color: var(--color-muted);
+      margin-bottom: 8px;
+    }
 
-  .footer-divider {
-    height: 1px;
-    background: var(--color-border);
-    margin: 12px 0;
-    width: 40px;
-  }
+    .footer-divider {
+      height: 1px;
+      background: var(--color-border);
+      margin: 12px 0;
+      width: 40px;
+    }
 
-  .footer-info-pill {
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--color-muted);
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
+    .footer-info-pill {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-muted);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
 
-  .veg-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #4caf50;
-    display: inline-block;
-  }
+    .veg-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #4caf50;
+      display: inline-block;
+    }
 
-  .footer-bottom {
-    max-width: 1200px;
-    margin: 2rem auto 0;
-    border-top: 1px solid var(--color-border);
-    padding-top: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 2rem auto 0;
+      border-top: 1px solid var(--color-border);
+      padding-top: 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
 
-  .footer-bottom p {
-    font-family: var(--font-body);
-    font-size: 12px;
-    color: var(--color-muted);
-    margin: 0;
-  }
+    .footer-bottom p {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--color-muted);
+      margin: 0;
+    }
 
-  /* --- Mobile FAB --- */
-  #mobile-fab {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    background: var(--color-surface);
-    border-top: 2px solid var(--color-gold);
-    height: 64px;
-    box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
-  }
+    /* --- Mobile FAB --- */
+    #mobile-fab {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: var(--color-surface);
+      border-top: 2px solid var(--color-gold);
+      height: 64px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+    }
 
-  #mobile-fab.fab-visible {
-    display: flex;
-  }
+    #mobile-fab.fab-visible {
+      display: flex;
+    }
 
-  @media (min-width: 769px) {
-    #mobile-fab { display: none !important; }
-  }
+    @media (min-width: 769px) {
+      #mobile-fab {
+        display: none !important;
+      }
+    }
 
-  .fab-btn {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    font-family: var(--font-body);
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-  }
+    .fab-btn {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
 
-  .fab-btn i {
-    font-size: 20px;
-  }
+    .fab-btn i {
+      font-size: 20px;
+    }
 
-  .fab-call {
-    color: var(--color-white);
-    background: transparent;
-  }
+    .fab-call {
+      color: var(--color-white);
+      background: transparent;
+    }
 
-  .fab-reserve {
-    color: #1a1a1a;
-    background: var(--color-gold);
-  }
+    .fab-reserve {
+      color: #1a1a1a;
+      background: var(--color-gold);
+    }
 
-  .fab-divider {
-    width: 1px;
-    background: var(--color-border);
-    height: 32px;
-    align-self: center;
-  }
+    .fab-divider {
+      width: 1px;
+      background: var(--color-border);
+      height: 32px;
+      align-self: center;
+    }
 
-  /* --- Back to top --- */
-  #back-to-top {
-    position: fixed;
-    bottom: 80px;
-    right: 24px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--color-gold);
-    color: #1a1a1a;
-    border: none;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    z-index: 998;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  }
-
-  #back-to-top:hover {
-    transform: translateY(-3px);
-  }
-
-  #back-to-top.visible {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  @media (max-width: 768px) {
+    /* --- Back to top --- */
     #back-to-top {
-      bottom: 144px;
+      position: fixed;
+      bottom: 80px;
+      right: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      color: #1a1a1a;
+      border: none;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 998;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
-    body.fab-active {
-      padding-bottom: 64px;
+
+    #back-to-top:hover {
+      transform: translateY(-3px);
     }
-  }
+
+    #back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    @media (max-width: 768px) {
+      #back-to-top {
+        bottom: 144px;
+      }
+
+      body.fab-active {
+        padding-bottom: 64px;
+      }
+    }
   </style>
 
   <!-- Swiper CSS (Phase 5) -->
@@ -2009,6 +2064,7 @@
   <!-- GLightbox CSS (Phase 4) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
+
 <body>
 
   <!-- =============================================
@@ -2035,13 +2091,8 @@
     </a>
 
     <!-- Hamburger (mobile) -->
-    <button
-      class="hamburger"
-      id="hamburger-btn"
-      aria-label="Open navigation menu"
-      aria-expanded="false"
-      aria-controls="mobile-overlay"
-    >
+    <button class="hamburger" id="hamburger-btn" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="mobile-overlay">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -2056,7 +2107,7 @@
     <p class="mobile-tagline">Fine Dine &middot; Rooftop &middot; Jodhpur</p>
 
     <ul class="mobile-nav-links" role="list">
-      <li><a href="#menu"    class="mobile-nav-link">Menu</a></li>
+      <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
       <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
       <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
       <li><a href="#reserve" class="mobile-nav-link">Reserve</a></li>
@@ -2106,7 +2157,7 @@
         <div class="hero-rating" aria-label="Rated 4.7 out of 5 stars based on 3308 reviews">
           <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           <span class="rating-value">4.7</span>
-          <span class="rating-count">Â· 3,308 reviews</span>
+          <span class="rating-count">3,500 reviews</span>
         </div>
 
         <!-- CTA buttons -->
@@ -2197,7 +2248,8 @@
 
           <!-- Right column: image placeholder -->
           <!-- CLIENT: replace with interior/chef photo -->
-          <div class="story-image-placeholder reveal" style="transition-delay: 0.15s;" aria-label="Interior photo of The Spice Story â€” coming soon"></div>
+          <div class="story-image-placeholder reveal" style="transition-delay: 0.15s;"
+            aria-label="Interior photo of The Spice Story â€” coming soon"></div>
 
         </div>
       </div>
@@ -2295,18 +2347,23 @@
         <header class="menu-header reveal">
           <span class="eyebrow">Our Menu</span>
           <h2 class="section-h2" id="menu-heading">Crafted with Tradition</h2>
-          <p class="menu-subtext">Every dish tells a story of Rajasthani heritage, prepared fresh daily with 100% vegetarian ingredients.</p>
+          <p class="menu-subtext">Every dish tells a story of Rajasthani heritage, prepared fresh daily with 100%
+            vegetarian ingredients.</p>
         </header>
 
         <!-- Tab filter â€” scrolls horizontally on mobile -->
         <div class="menu-tabs-wrap">
           <div class="menu-tabs" role="tablist" aria-label="Menu category filter">
-            <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="all"             id="tab-all">All</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="starters"        id="tab-starters">Starters</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="paneer-specials" id="tab-paneer">Paneer Specials</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="mains"           id="tab-mains">Mains</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="desserts"        id="tab-desserts">Desserts</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="beverages"       id="tab-beverages">Beverages</button>
+            <button class="tab-btn active" role="tab" aria-selected="true" data-tab="all" id="tab-all">All</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="starters"
+              id="tab-starters">Starters</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="paneer-specials" id="tab-paneer">Paneer
+              Specials</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="mains" id="tab-mains">Mains</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="desserts"
+              id="tab-desserts">Desserts</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="beverages"
+              id="tab-beverages">Beverages</button>
           </div>
         </div>
 
@@ -2326,7 +2383,8 @@
                 <h4 class="dish-name">Dahi Ke Sholay</h4>
                 <span class="dish-price">&#x20B9;220</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Crispy fried curd shots with mint chutney and tamarind glaze</p>
             </div>
           </article>
@@ -2342,7 +2400,8 @@
                 <h4 class="dish-name">Paneer Tikka</h4>
                 <span class="dish-price">&#x20B9;280</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Tandoor-grilled cottage cheese with bell peppers and smoky spices</p>
             </div>
           </article>
@@ -2358,7 +2417,8 @@
                 <h4 class="dish-name">Veg Seekh Kabab</h4>
                 <span class="dish-price">&#x20B9;260</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Spiced vegetable skewers straight from the sigri grill</p>
             </div>
           </article>
@@ -2376,7 +2436,8 @@
                 <h4 class="dish-name">Shahi Paneer</h4>
                 <span class="dish-price">&#x20B9;320</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Rich Mughlai gravy with saffron and dry fruits</p>
             </div>
           </article>
@@ -2392,7 +2453,8 @@
                 <h4 class="dish-name">Paneer Lababdar</h4>
                 <span class="dish-price">&#x20B9;310</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Slow-cooked in a tangy tomato and cashew sauce</p>
             </div>
           </article>
@@ -2408,7 +2470,8 @@
                 <h4 class="dish-name">Kadai Paneer</h4>
                 <span class="dish-price">&#x20B9;300</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Fresh cottage cheese tossed with whole spices and capsicum</p>
             </div>
           </article>
@@ -2426,7 +2489,8 @@
                 <h4 class="dish-name">Dal Baati Churma</h4>
                 <span class="dish-price">&#x20B9;350</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Rajasthani classic &mdash; baked wheat balls with five-lentil dal and churma</p>
             </div>
           </article>
@@ -2442,7 +2506,8 @@
                 <h4 class="dish-name">Gatte Ki Sabzi</h4>
                 <span class="dish-price">&#x20B9;280</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Gram flour dumplings in a spiced yogurt gravy</p>
             </div>
           </article>
@@ -2458,7 +2523,8 @@
                 <h4 class="dish-name">Ker Sangri</h4>
                 <span class="dish-price">&#x20B9;290</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Desert beans and berries &mdash; a true Marwari specialty</p>
             </div>
           </article>
@@ -2476,7 +2542,8 @@
                 <h4 class="dish-name">Blueberry Cheesecake</h4>
                 <span class="dish-price">&#x20B9;220</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">New York-style cheesecake with fresh blueberry compote</p>
             </div>
           </article>
@@ -2492,7 +2559,8 @@
                 <h4 class="dish-name">Malpua Rabri</h4>
                 <span class="dish-price">&#x20B9;200</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Fried pancakes soaked in syrup, topped with chilled rabri</p>
             </div>
           </article>
@@ -2508,7 +2576,8 @@
                 <h4 class="dish-name">Gulab Jamun</h4>
                 <span class="dish-price">&#x20B9;150</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Soft milk solids dumplings in warm rose-cardamom syrup</p>
             </div>
           </article>
@@ -2526,7 +2595,8 @@
                 <h4 class="dish-name">Thandai</h4>
                 <span class="dish-price">&#x20B9;160</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Chilled spiced milk with saffron, rose, and dry fruits</p>
             </div>
           </article>
@@ -2542,7 +2612,8 @@
                 <h4 class="dish-name">Masala Chaas</h4>
                 <span class="dish-price">&#x20B9;120</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Spiced buttermilk with cumin and fresh coriander</p>
             </div>
           </article>
@@ -2558,7 +2629,8 @@
                 <h4 class="dish-name">Fresh Lime Soda</h4>
                 <span class="dish-price">&#x20B9;100</span>
               </div>
-              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure Veg</span></div>
+              <div class="veg-badge"><span class="veg-dot" aria-hidden="true"></span><span class="veg-label">Pure
+                  Veg</span></div>
               <p class="dish-desc">Sweet or salted, with a hint of black salt</p>
             </div>
           </article>
@@ -2596,11 +2668,11 @@
           <div class="menu-download-btns">
             <!-- CLIENT: link to actual PDF -->
             <a href="#" class="btn-outline" role="button" id="download-menu-cta"
-               aria-label="Download the full menu PDF">
+              aria-label="Download the full menu PDF">
               Download Full Menu (PDF)
             </a>
             <a href="#reserve" class="btn-primary" role="button" id="menu-reserve-cta"
-               aria-label="Reserve a table at The Spice Story">
+              aria-label="Reserve a table at The Spice Story">
               Reserve a Table
             </a>
           </div>
@@ -2623,16 +2695,19 @@
         <header class="gallery-header reveal">
           <span class="eyebrow">Our Gallery</span>
           <h2 class="section-h2" id="gallery-heading">Every Corner Tells a Story</h2>
-          <p class="gallery-subtext">From rooftop sunsets to plated masterpieces — a glimpse into The Spice Story experience.</p>
+          <p class="gallery-subtext">From rooftop sunsets to plated masterpieces — a glimpse into The Spice Story
+            experience.</p>
         </header>
 
         <!-- Filter tabs -->
         <div class="gallery-tabs-wrap">
           <div class="gallery-tabs" role="tablist" id="gallery-tablist" aria-label="Gallery category filter">
-            <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="all"      id="gtab-all">All</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="food"     id="gtab-food">Food</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="rooftop"  id="gtab-rooftop">Rooftop</button>
-            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="interior" id="gtab-interior">Interior</button>
+            <button class="tab-btn active" role="tab" aria-selected="true" data-tab="all" id="gtab-all">All</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="food" id="gtab-food">Food</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="rooftop"
+              id="gtab-rooftop">Rooftop</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-tab="interior"
+              id="gtab-interior">Interior</button>
           </div>
         </div>
 
@@ -2741,7 +2816,8 @@
 
           <!-- 11. rooftop / medium -->
           <div class="gallery-item medium reveal" data-category="rooftop">
-            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Golden hour rooftop" data-type="image">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Golden hour rooftop"
+              data-type="image">
               <!-- CLIENT: update href to real image path before go-live -->
               <div class="gallery-placeholder">
                 <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
@@ -2830,7 +2906,7 @@
           <div class="insta-meta">
             <span class="eyebrow">Follow Us</span>
             <a href="https://instagram.com" class="insta-handle" target="_blank" rel="noopener noreferrer"
-               aria-label="The Spice Story on Instagram">@thespicestory</a>
+              aria-label="The Spice Story on Instagram">@thespicestory</a>
             <span class="insta-subtext">Tag us in your meals for a chance to be featured.</span>
           </div>
 
@@ -2893,11 +2969,12 @@
         <header class="reviews-header reveal">
           <span class="eyebrow">What Guests Say</span>
           <h2 class="section-h2" id="reviews-heading">4.7 Stars and Counting</h2>
-          <p class="reviews-subtext">Over 3,308 guests have shared their experience. Here are a few of their stories.</p>
+          <p class="reviews-subtext">Over 3,308 guests have shared their experience. Here are a few of their stories.
+          </p>
 
           <!-- Google rating badge -->
           <a href="https://maps.google.com" class="google-badge" target="_blank" rel="noopener noreferrer"
-             aria-label="4.7 stars on Google Reviews — 3,308 reviews">
+            aria-label="4.7 stars on Google Reviews — 3,308 reviews">
             <span class="g-logo" aria-hidden="true">G</span>
             <span class="badge-rating-text">4.7 on Google Reviews</span>
             <span class="badge-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
@@ -2923,7 +3000,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“The rooftop ambiance is unlike anything in Jodhpur. We came for a birthday dinner and left with memories for a lifetime. The paneer tikka and dal baati churma were absolutely divine.”</p>
+                <p class="review-text">“The rooftop ambiance is unlike anything in Jodhpur. We came for a birthday
+                  dinner and left with memories for a lifetime. The paneer tikka and dal baati churma were absolutely
+                  divine.”</p>
               </div>
             </div>
 
@@ -2941,7 +3020,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“Best vegetarian fine dining experience I’ve had in Rajasthan. The Shahi Paneer melted in my mouth and the service was impeccable. Will definitely return on my next visit to Jodhpur.”</p>
+                <p class="review-text">“Best vegetarian fine dining experience I’ve had in Rajasthan. The Shahi Paneer
+                  melted in my mouth and the service was impeccable. Will definitely return on my next visit to
+                  Jodhpur.”</p>
               </div>
             </div>
 
@@ -2959,7 +3040,8 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“The Blueberry Cheesecake alone is worth the visit. Stunning rooftop view, attentive staff, and food that genuinely surprises you. The Thandai is a must-order.”</p>
+                <p class="review-text">“The Blueberry Cheesecake alone is worth the visit. Stunning rooftop view,
+                  attentive staff, and food that genuinely surprises you. The Thandai is a must-order.”</p>
               </div>
             </div>
 
@@ -2977,7 +3059,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“Celebrated our anniversary here and the staff went above and beyond. The ambiance is sophisticated yet warm. Ker Sangri was a revelation — never had it prepared this well.”</p>
+                <p class="review-text">“Celebrated our anniversary here and the staff went above and beyond. The
+                  ambiance is sophisticated yet warm. Ker Sangri was a revelation — never had it prepared this well.”
+                </p>
               </div>
             </div>
 
@@ -2995,7 +3079,8 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“A hidden gem in Ratanada. The Gatte Ki Sabzi took me back to my grandmother’s kitchen, but elevated. The rooftop at sunset is breathtaking. Highly recommended for families.”</p>
+                <p class="review-text">“A hidden gem in Ratanada. The Gatte Ki Sabzi took me back to my grandmother’s
+                  kitchen, but elevated. The rooftop at sunset is breathtaking. Highly recommended for families.”</p>
               </div>
             </div>
 
@@ -3013,7 +3098,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“Brought my parents here and they couldn’t stop talking about it for weeks. The Dal Baati Churma is the most authentic I’ve tasted outside a home kitchen. Exceptional experience.”</p>
+                <p class="review-text">“Brought my parents here and they couldn’t stop talking about it for weeks. The
+                  Dal Baati Churma is the most authentic I’ve tasted outside a home kitchen. Exceptional experience.”
+                </p>
               </div>
             </div>
 
@@ -3031,7 +3118,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“The interiors are gorgeous and the food matches the setting perfectly. Malpua Rabri for dessert is life-changing. Staff remembered our names by the second course — that’s class.”</p>
+                <p class="review-text">“The interiors are gorgeous and the food matches the setting perfectly. Malpua
+                  Rabri for dessert is life-changing. Staff remembered our names by the second course — that’s class.”
+                </p>
               </div>
             </div>
 
@@ -3049,7 +3138,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“Took a business client here for dinner. The food quality and presentation impressed everyone. Paneer Lababdar and Veg Seekh Kabab were standouts. A restaurant that punches above its weight.”</p>
+                <p class="review-text">“Took a business client here for dinner. The food quality and presentation
+                  impressed everyone. Paneer Lababdar and Veg Seekh Kabab were standouts. A restaurant that punches
+                  above its weight.”</p>
               </div>
             </div>
 
@@ -3067,7 +3158,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“Jodhpur’s best kept secret. The rooftop view of the city lights is magical. Food is consistently excellent — we’ve visited four times and it never disappoints. The Masala Chaas is refreshing.”</p>
+                <p class="review-text">“Jodhpur’s best kept secret. The rooftop view of the city lights is magical. Food
+                  is consistently excellent — we’ve visited four times and it never disappoints. The Masala Chaas is
+                  refreshing.”</p>
               </div>
             </div>
 
@@ -3085,7 +3178,9 @@
                   </div>
                 </div>
                 <div class="review-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="review-text">“Exceptional in every way. The Kadai Paneer had the perfect spice balance and the Dahi Ke Sholay were crispy perfection. Service is warm and genuine. This is what fine dining should feel like.”</p>
+                <p class="review-text">“Exceptional in every way. The Kadai Paneer had the perfect spice balance and the
+                  Dahi Ke Sholay were crispy perfection. Service is warm and genuine. This is what fine dining should
+                  feel like.”</p>
               </div>
             </div>
 
@@ -3100,10 +3195,8 @@
         <!-- CLIENT: update href to direct Google review link -->
         <div class="reviews-cta reveal">
           <p class="reviews-cta-hint">Had a great experience?</p>
-          <a href="https://maps.google.com" class="btn-outline" role="button"
-             target="_blank" rel="noopener noreferrer"
-             id="write-review-cta"
-             aria-label="Write a review on Google">
+          <a href="https://maps.google.com" class="btn-outline" role="button" target="_blank" rel="noopener noreferrer"
+            id="write-review-cta" aria-label="Write a review on Google">
             <i class="ti ti-brand-google" aria-hidden="true"></i>
             Write a Review on Google
           </a>
@@ -3126,7 +3219,8 @@
         <header class="reserve-header reveal">
           <span class="eyebrow">Reserve a Table</span>
           <h2 class="section-h2" id="reserve-heading">Join Us for an Unforgettable Meal</h2>
-          <p class="reserve-subtext">Book your table at The Spice Story. We recommend reserving in advance for rooftop seating.</p>
+          <p class="reserve-subtext">Book your table at The Spice Story. We recommend reserving in advance for rooftop
+            seating.</p>
         </header>
 
         <!-- Two-column grid -->
@@ -3139,28 +3233,25 @@
               <!-- Name -->
               <div class="form-group">
                 <label for="name">Full Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name"
-                       placeholder="Your full name" required
-                       autocomplete="name" aria-required="true">
+                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name"
+                  aria-required="true">
                 <span class="field-error" id="name-error" role="alert">Please enter your full name.</span>
               </div>
 
               <!-- Phone -->
               <div class="form-group">
                 <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
-                <input type="tel" id="phone" name="phone"
-                       placeholder="+91 98765 43210" required
-                       pattern="[6-9][0-9]{9}"
-                       autocomplete="tel" aria-required="true">
-                <span class="field-error" id="phone-error" role="alert">Please enter a valid 10-digit Indian mobile number.</span>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required pattern="[6-9][0-9]{9}"
+                  autocomplete="tel" aria-required="true">
+                <span class="field-error" id="phone-error" role="alert">Please enter a valid 10-digit Indian mobile
+                  number.</span>
               </div>
 
               <!-- Email -->
               <div class="form-group">
-                <label for="email">Email Address <span style="color: var(--color-muted); font-size: 10px;">(optional)</span></label>
-                <input type="email" id="email" name="email"
-                       placeholder="your@email.com"
-                       autocomplete="email">
+                <label for="email">Email Address <span
+                    style="color: var(--color-muted); font-size: 10px;">(optional)</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email">
                 <span class="field-error" id="email-error" role="alert">Please enter a valid email address.</span>
               </div>
 
@@ -3217,21 +3308,22 @@
               <div class="form-group">
                 <label>Seating Preference</label>
                 <div class="seating-group" role="group" aria-label="Seating preference">
-                  <button type="button" class="seating-btn" data-value="Rooftop"
-                          aria-pressed="false" id="seat-rooftop">Rooftop</button>
-                  <button type="button" class="seating-btn" data-value="Fine Dine Hall"
-                          aria-pressed="false" id="seat-fine">Fine Dine Hall</button>
-                  <button type="button" class="seating-btn active" data-value="No Preference"
-                          aria-pressed="true" id="seat-nopref">No Preference</button>
+                  <button type="button" class="seating-btn" data-value="Rooftop" aria-pressed="false"
+                    id="seat-rooftop">Rooftop</button>
+                  <button type="button" class="seating-btn" data-value="Fine Dine Hall" aria-pressed="false"
+                    id="seat-fine">Fine Dine Hall</button>
+                  <button type="button" class="seating-btn active" data-value="No Preference" aria-pressed="true"
+                    id="seat-nopref">No Preference</button>
                 </div>
                 <input type="hidden" id="seating" name="seating" value="No Preference">
               </div>
 
               <!-- Special request -->
               <div class="form-group">
-                <label for="message">Special Request <span style="color: var(--color-muted); font-size: 10px;">(optional)</span></label>
+                <label for="message">Special Request <span
+                    style="color: var(--color-muted); font-size: 10px;">(optional)</span></label>
                 <textarea id="message" name="message" rows="3"
-                          placeholder="Dietary needs, occasion, special arrangements..."></textarea>
+                  placeholder="Dietary needs, occasion, special arrangements..."></textarea>
               </div>
 
               <!-- Submit -->
@@ -3276,7 +3368,7 @@
                 <i class="ti ti-brand-whatsapp contact-icon" aria-hidden="true"></i>
                 <span class="contact-text">
                   <a href="https://wa.me/919001890329" target="_blank" rel="noopener noreferrer"
-                     aria-label="Chat with The Spice Story on WhatsApp">Chat on WhatsApp</a>
+                    aria-label="Chat with The Spice Story on WhatsApp">Chat on WhatsApp</a>
                 </span>
               </div>
 
@@ -3285,12 +3377,9 @@
             <!-- Embedded Google Map -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.123!2d73.037535!3d26.279327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418d1100aadcdb%3A0xba448337948070c8!2sThe%20Spice%20Story!5e0!3m2!1sen!2sin!4v1234567890"
-              width="100%"
-              height="220"
+              width="100%" height="220"
               style="border: 1px solid var(--color-border); border-radius: 4px; filter: grayscale(30%) contrast(1.1); display: block;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               title="The Spice Story location on Google Maps"
               aria-label="Embedded Google Map showing The Spice Story location">
             </iframe>
@@ -3318,10 +3407,14 @@
         <p>Experience the original taste of Rajasthan.</p>
         <div class="footer-social">
           <!-- CLIENT: update social links -->
-          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
-          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
-          <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a>
-          <a href="#" aria-label="Google" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-google" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-instagram"
+              aria-hidden="true"></i></a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-facebook"
+              aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-youtube"
+              aria-hidden="true"></i></a>
+          <a href="#" aria-label="Google" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-google"
+              aria-hidden="true"></i></a>
         </div>
       </div>
 
@@ -3353,7 +3446,8 @@
         </div>
         <div class="footer-contact-item">
           <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
-          <a href="https://wa.me/919001890329" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">WhatsApp Us</a>
+          <a href="https://wa.me/919001890329" target="_blank" rel="noopener noreferrer"
+            aria-label="WhatsApp us">WhatsApp Us</a>
         </div>
       </div>
 
@@ -3473,10 +3567,10 @@
       handleNavScroll();
 
       /* --- Mobile Hamburger Toggle --- */
-      const hamburgerBtn   = document.getElementById('hamburger-btn');
-      const mobileOverlay  = document.getElementById('mobile-overlay');
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const mobileOverlay = document.getElementById('mobile-overlay');
       const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-      const mobileCta      = document.querySelector('.mobile-cta');
+      const mobileCta = document.querySelector('.mobile-cta');
 
       function openMenu() {
         hamburgerBtn.classList.add('is-open');
@@ -3600,7 +3694,7 @@
     (function () {
       'use strict';
 
-      var tabs  = document.querySelectorAll('.tab-btn');
+      var tabs = document.querySelectorAll('.tab-btn');
       var cards = document.querySelectorAll('.dish-card');
 
       function filterMenu(value) {
@@ -3640,7 +3734,7 @@
       'use strict';
 
       /* --- Gallery tab filter (scoped to #gallery-tablist) --- */
-      var galleryTabs  = document.querySelectorAll('#gallery-tablist .tab-btn');
+      var galleryTabs = document.querySelectorAll('#gallery-tablist .tab-btn');
       var galleryItems = document.querySelectorAll('#gallery-grid .gallery-item');
 
       function filterGallery(value) {
@@ -3706,8 +3800,8 @@
             nextEl: '.swiper-button-next'
           },
           breakpoints: {
-            640:  { slidesPerView: 1 },
-            768:  { slidesPerView: 2, spaceBetween: 20 },
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
             1024: { slidesPerView: 3, spaceBetween: 24 }
           }
         });
@@ -3749,15 +3843,15 @@
       function showError(inputId, errorId) {
         var input = document.getElementById(inputId);
         var error = document.getElementById(errorId);
-        if (input)  input.classList.add('error');
-        if (error)  error.classList.add('visible');
+        if (input) input.classList.add('error');
+        if (error) error.classList.add('visible');
       }
 
       function clearError(inputId, errorId) {
         var input = document.getElementById(inputId);
         var error = document.getElementById(errorId);
-        if (input)  input.classList.remove('error');
-        if (error)  error.classList.remove('visible');
+        if (input) input.classList.remove('error');
+        if (error) error.classList.remove('visible');
       }
 
       /* Clear error on user input */
@@ -3833,8 +3927,8 @@
           }
 
           /* Build WhatsApp message */
-          var seatingVal  = (seatingInput ? seatingInput.value : 'No Preference');
-          var messageVal  = (document.getElementById('message').value || '').trim();
+          var seatingVal = (seatingInput ? seatingInput.value : 'No Preference');
+          var messageVal = (document.getElementById('message').value || '').trim();
 
           /* Format date nicely */
           var dateFormatted = dateVal;
@@ -3845,14 +3939,14 @@
           } catch (err) { /* fallback to raw value */ }
 
           var msg = 'Hello! I\u2019d like to reserve a table at The Spice Story.\n\n' +
-                    'Name: ' + nameVal + '\n' +
-                    'Phone: ' + phoneVal + '\n' +
-                    'Date: ' + dateFormatted + '\n' +
-                    'Time: ' + timeVal + '\n' +
-                    'Guests: ' + guestsVal + '\n' +
-                    'Seating: ' + seatingVal + '\n' +
-                    'Special Request: ' + (messageVal || 'None') + '\n\n' +
-                    'Please confirm my booking. Thank you!';
+            'Name: ' + nameVal + '\n' +
+            'Phone: ' + phoneVal + '\n' +
+            'Date: ' + dateFormatted + '\n' +
+            'Time: ' + timeVal + '\n' +
+            'Guests: ' + guestsVal + '\n' +
+            'Seating: ' + seatingVal + '\n' +
+            'Special Request: ' + (messageVal || 'None') + '\n\n' +
+            'Please confirm my booking. Thank you!';
 
           var waURL = 'https://wa.me/919001890329?text=' + encodeURIComponent(msg);
           window.open(waURL, '_blank');
@@ -3860,10 +3954,10 @@
           /* Show success state */
           form.innerHTML =
             '<div class="booking-success">' +
-              '<i class="ti ti-circle-check" style="font-size:48px;color:var(--color-gold);" aria-hidden="true"></i>' +
-              '<h3>Reservation Sent!</h3>' +
-              '<p>Your table request has been sent via WhatsApp. We\u2019ll confirm shortly.</p>' +
-              '<button onclick="location.reload()" class="btn-outline">Make Another Booking</button>' +
+            '<i class="ti ti-circle-check" style="font-size:48px;color:var(--color-gold);" aria-hidden="true"></i>' +
+            '<h3>Reservation Sent!</h3>' +
+            '<p>Your table request has been sent via WhatsApp. We\u2019ll confirm shortly.</p>' +
+            '<button onclick="location.reload()" class="btn-outline">Make Another Booking</button>' +
             '</div>';
         });
       }
@@ -3940,13 +4034,13 @@
       /* --- Mobile FAB --- */
       var fab = document.getElementById('mobile-fab');
       var reserveSection = document.getElementById('reserve');
-      
+
       if (fab && reserveSection) {
         window.addEventListener('scroll', function () {
           var scrolled = window.scrollY > 300;
           var reserveRect = reserveSection.getBoundingClientRect();
           var reserveVisible = (reserveRect.top < window.innerHeight) && (reserveRect.bottom > 0);
-          
+
           if (scrolled && !reserveVisible) {
             fab.classList.add('fab-visible');
             document.body.classList.add('fab-active');
@@ -3962,5 +4056,5 @@
 
   <!-- PHASE 7 COMPLETE — WEBSITE BUILD DONE -->
 </body>
-</html>
 
+</html>
