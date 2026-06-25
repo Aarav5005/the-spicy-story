@@ -843,6 +843,244 @@
         border-right: 1px solid rgba(255, 255, 255, 0.1);
       }
     }
+
+    /* =============================================
+       PHASE 3 — MENU SECTION
+    ============================================= */
+    #menu {
+      padding: var(--space-lg) 0;
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .menu-header {
+      text-align: center;
+      margin-bottom: var(--space-md);
+    }
+
+    .menu-header .section-h2 {
+      margin-top: 0.5rem;
+    }
+
+    /* --- Tab Filter Bar --- */
+    .menu-tabs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .tab-btn {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-muted);
+      background: transparent;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 8px 20px;
+      cursor: pointer;
+      letter-spacing: 0.4px;
+      transition: color var(--transition), border-color var(--transition), background var(--transition);
+      position: relative;
+    }
+
+    .tab-btn::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: var(--color-gold);
+      transition: width var(--transition);
+    }
+
+    .tab-btn:hover {
+      color: var(--color-white);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    .tab-btn.active {
+      color: var(--color-gold);
+      border-color: var(--color-gold);
+      background: rgba(211, 145, 33, 0.08);
+    }
+
+    .tab-btn.active::after {
+      width: 60%;
+    }
+
+    /* --- Menu Grid --- */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 600px) {
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* --- Dish Card --- */
+    .dish-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .dish-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-gold);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Image placeholder area */
+    .dish-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: var(--color-bg);
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    /* CLIENT: replace .dish-img with <img> tag */
+    .dish-img-placeholder {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #1e1a12 0%, #2d2518 50%, #1a160e 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dish-img-placeholder .dish-icon {
+      font-size: 2.5rem;
+      opacity: 0.18;
+      color: var(--color-gold);
+    }
+
+    /* Badge row inside image */
+    .dish-badges {
+      position: absolute;
+      top: 0.65rem;
+      left: 0.65rem;
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+
+    .badge-veg {
+      background: rgba(40, 130, 60, 0.85);
+      color: #a8f0b8;
+    }
+
+    .badge-spicy {
+      background: rgba(180, 30, 15, 0.85);
+      color: #ffc0b8;
+    }
+
+    .badge-chef {
+      background: rgba(211, 145, 33, 0.85);
+      color: #1a1a1a;
+    }
+
+    .badge-new {
+      background: rgba(60, 120, 200, 0.85);
+      color: #c0d8ff;
+    }
+
+    /* Card body */
+    .dish-body {
+      padding: 1.1rem 1.25rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      flex: 1;
+    }
+
+    .dish-category {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--color-gold);
+    }
+
+    .dish-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--color-white);
+      line-height: 1.2;
+    }
+
+    .dish-desc {
+      font-family: var(--font-body);
+      font-size: 13px;
+      line-height: 1.65;
+      color: var(--color-muted);
+      flex: 1;
+    }
+
+    .dish-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .dish-price {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-gold);
+    }
+
+    .dish-type-icon {
+      font-size: 16px;
+      color: var(--color-muted);
+    }
+
+    /* --- Hidden card state for filter --- */
+    .dish-card.hidden {
+      display: none;
+    }
+
+    /* --- View Full Menu CTA --- */
+    .menu-cta-wrap {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
   </style>
 </head>
 <body>
@@ -1119,6 +1357,305 @@
 
     <!-- PHASE 2 COMPLETE -->
 
+    <!-- =============================================
+         PHASE 3 — MENU SECTION
+    ============================================= -->
+    <section id="menu" aria-labelledby="menu-heading" class="reveal">
+      <div class="section-inner">
+
+        <!-- Section header -->
+        <header class="menu-header">
+          <span class="eyebrow">Our Menu</span>
+          <h2 class="section-h2" id="menu-heading">Crafted with Heart, Served with Pride</h2>
+        </header>
+
+        <!-- Tab filter -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu category filter">
+          <button class="tab-btn active" role="tab" aria-selected="true"  aria-controls="menu-grid" data-filter="all"   id="tab-all">All</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="menu-grid" data-filter="starters" id="tab-starters">Starters</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="menu-grid" data-filter="mains"    id="tab-mains">Main Course</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="menu-grid" data-filter="breads"   id="tab-breads">Breads &amp; Rice</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="menu-grid" data-filter="desserts" id="tab-desserts">Desserts</button>
+          <button class="tab-btn"        role="tab" aria-selected="false" aria-controls="menu-grid" data-filter="drinks"   id="tab-drinks">Drinks</button>
+        </div>
+
+        <!-- Dish cards grid -->
+        <div class="menu-grid" id="menu-grid" role="tabpanel">
+
+          <!-- ── STARTERS ── -->
+
+          <!-- Paneer Tikka -->
+          <article class="dish-card" data-category="starters" aria-label="Paneer Tikka">
+            <div class="dish-img">
+              <!-- CLIENT: replace with <img src="images/menu/paneer-tikka.webp" alt="Paneer tikka starter at The Spice Story, Jodhpur" width="400" height="300" loading="lazy"> -->
+              <div class="dish-img-placeholder"><i class="ti ti-chef-hat dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-chef">Chef's Pick</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Starters</span>
+              <h4 class="dish-name">Paneer Tikka</h4>
+              <p class="dish-desc">Cottage cheese marinated in spiced yogurt, grilled in tandoor until perfectly charred. Served with mint chutney.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹280</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Veg Seekh Kebab -->
+          <article class="dish-card" data-category="starters" aria-label="Veg Seekh Kebab">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-flame dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-spicy">Spicy</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Starters</span>
+              <h4 class="dish-name">Veg Seekh Kebab</h4>
+              <p class="dish-desc">Hand-rolled kebabs of minced vegetables and paneer, spiced with Rajasthani masala and cooked on skewers.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹240</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dahi Ke Sholay -->
+          <article class="dish-card" data-category="starters" aria-label="Dahi Ke Sholay">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-bowl dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-new">New</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Starters</span>
+              <h4 class="dish-name">Dahi Ke Sholay</h4>
+              <p class="dish-desc">Crispy bread rolls stuffed with spiced hung curd and herbs, deep fried to golden perfection. A Spice Story original.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹220</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── MAINS ── -->
+
+          <!-- Dal Baati Churma -->
+          <article class="dish-card" data-category="mains" aria-label="Dal Baati Churma">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-bowl dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-chef">Chef's Pick</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Main Course</span>
+              <h4 class="dish-name">Dal Baati Churma</h4>
+              <p class="dish-desc">Rajasthan's most iconic dish — crispy wheat baati, five-lentil dal, and sweet churma served with dollops of pure ghee.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹380</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paneer Laal Maas -->
+          <article class="dish-card" data-category="mains" aria-label="Paneer Laal Maas">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-flame dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-spicy">Spicy</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Main Course</span>
+              <h4 class="dish-name">Paneer Laal Maas</h4>
+              <p class="dish-desc">A bold vegetarian reimagining of Rajasthan's fiery red curry — paneer in a rich, smoky Mathania chilli gravy.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹360</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gatta Curry -->
+          <article class="dish-card" data-category="mains" aria-label="Gatta Curry">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-bowl dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Main Course</span>
+              <h4 class="dish-name">Gatta Curry</h4>
+              <p class="dish-desc">Besan dumplings slow-cooked in a tangy, spiced yogurt-based curry. A Marwari home-style classic, elevated.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹300</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── BREADS & RICE ── -->
+
+          <!-- Missi Roti -->
+          <article class="dish-card" data-category="breads" aria-label="Missi Roti">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-circle dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Breads &amp; Rice</span>
+              <h4 class="dish-name">Missi Roti</h4>
+              <p class="dish-desc">Traditional Rajasthani flatbread made with gram flour, fresh fenugreek leaves, and spices. Baked in tandoor.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹60</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Rajasthani Pulao -->
+          <article class="dish-card" data-category="breads" aria-label="Rajasthani Pulao">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-bowl dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-chef">Chef's Pick</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Breads &amp; Rice</span>
+              <h4 class="dish-name">Rajasthani Pulao</h4>
+              <p class="dish-desc">Fragrant basmati rice cooked with whole spices, fried cashews, and raisins — a royal side dish.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹220</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DESSERTS ── -->
+
+          <!-- Malpua Rabri -->
+          <article class="dish-card" data-category="desserts" aria-label="Malpua with Rabri">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-cookie dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-chef">Chef's Pick</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Desserts</span>
+              <h4 class="dish-name">Malpua with Rabri</h4>
+              <p class="dish-desc">Soft, syrup-soaked wheat pancakes paired with rich chilled rabri — an indulgent taste of old Jodhpur.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹180</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blueberry Cheesecake -->
+          <article class="dish-card" data-category="desserts" aria-label="Blueberry Cheesecake">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-cookie dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-new">New</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Desserts</span>
+              <h4 class="dish-name">Blueberry Cheesecake</h4>
+              <p class="dish-desc">Classic New York cheesecake with a fresh blueberry compote — our most-ordered Continental dessert.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹240</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── DRINKS ── -->
+
+          <!-- Masala Chaas -->
+          <article class="dish-card" data-category="drinks" aria-label="Masala Chaas">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-glass dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Drinks</span>
+              <h4 class="dish-name">Masala Chaas</h4>
+              <p class="dish-desc">Chilled spiced buttermilk with cumin, black salt, and fresh coriander — the perfect Rajasthani refresher.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹80</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Rose Sharbat -->
+          <article class="dish-card" data-category="drinks" aria-label="Rose Sharbat">
+            <div class="dish-img">
+              <!-- CLIENT: replace with real dish photo -->
+              <div class="dish-img-placeholder"><i class="ti ti-glass dish-icon" aria-hidden="true"></i></div>
+              <div class="dish-badges">
+                <span class="badge badge-veg">Veg</span>
+                <span class="badge badge-chef">Chef's Pick</span>
+              </div>
+            </div>
+            <div class="dish-body">
+              <span class="dish-category">Drinks</span>
+              <h4 class="dish-name">Rose Sharbat</h4>
+              <p class="dish-desc">House-made rose syrup with chilled milk and a hint of cardamom — floral, cooling, and unmistakably Rajasthani.</p>
+              <div class="dish-footer">
+                <span class="dish-price">₹100</span>
+                <i class="ti ti-leaf dish-type-icon" aria-label="Vegetarian" title="Vegetarian"></i>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /menu-grid -->
+
+        <!-- View Full Menu CTA -->
+        <div class="menu-cta-wrap">
+          <a href="/menu" class="btn-outline" role="button" id="view-full-menu-cta"
+             aria-label="View the full menu of The Spice Story">
+            View Full Menu
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHASE 3 COMPLETE -->
+
   </main>
 
   <!-- Schema.org JSON-LD — Local Business Rich Result -->
@@ -1316,6 +1853,39 @@
 
       var statsStrip = document.getElementById('stats-strip');
       if (statsStrip) statsObserver.observe(statsStrip);
+
+    }());
+  </script>
+
+  <!-- Phase 3 JS: Menu Tab Filter (no page reload) -->
+  <script>
+    (function () {
+      'use strict';
+
+      var tabs  = document.querySelectorAll('.tab-btn');
+      var cards = document.querySelectorAll('.dish-card');
+
+      function filterMenu(category) {
+        cards.forEach(function (card) {
+          var match = (category === 'all') || (card.dataset.category === category);
+          card.classList.toggle('hidden', !match);
+        });
+      }
+
+      tabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          /* Update active tab styles */
+          tabs.forEach(function (t) {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+
+          /* Filter cards */
+          filterMenu(btn.dataset.filter);
+        });
+      });
 
     }());
   </script>
