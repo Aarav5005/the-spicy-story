@@ -1081,7 +1081,243 @@
       text-align: center;
       margin-top: 2.5rem;
     }
+  /* =============================================
+     PHASE 4 — GALLERY SECTION
+  ============================================= */
+  #gallery {
+    padding: var(--space-lg) 0;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .gallery-header {
+    text-align: center;
+    margin-bottom: var(--space-md);
+  }
+
+  .gallery-subtext {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    max-width: 520px;
+    margin: 0.75rem auto 0;
+    line-height: 1.7;
+  }
+
+  /* --- Gallery tab bar (reuses .tab-btn from Phase 3) --- */
+  .gallery-tabs-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-bottom: 2rem;
+  }
+  .gallery-tabs-wrap::-webkit-scrollbar { display: none; }
+
+  .gallery-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    min-width: max-content;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+  /* --- Masonry columns --- */
+  .masonry-grid {
+    columns: 3;
+    column-gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+  @media (max-width: 768px) {
+    .masonry-grid { columns: 2; }
+  }
+
+  @media (max-width: 480px) {
+    .masonry-grid { columns: 1; }
+  }
+
+  /* Critical masonry fix: inline-block keeps items in column flow */
+  .gallery-item {
+    display: inline-block;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  .gallery-item.hidden {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  /* Height variants */
+  .gallery-item.short  .gallery-placeholder { height: 220px; }
+  .gallery-item.medium .gallery-placeholder { height: 280px; }
+  .gallery-item.tall   .gallery-placeholder { height: 340px; }
+
+  /* Placeholder box */
+  .gallery-placeholder {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+  }
+
+  /* Background colour variants */
+  .gallery-item:nth-child(1)  .gallery-placeholder,
+  .gallery-item:nth-child(5)  .gallery-placeholder,
+  .gallery-item:nth-child(9)  .gallery-placeholder,
+  .gallery-item:nth-child(13) .gallery-placeholder {
+    background: var(--color-surface);
+  }
+  .gallery-item:nth-child(2)  .gallery-placeholder,
+  .gallery-item:nth-child(6)  .gallery-placeholder,
+  .gallery-item:nth-child(10) .gallery-placeholder,
+  .gallery-item:nth-child(14) .gallery-placeholder {
+    background: #2f2d2a;
+  }
+  .gallery-item:nth-child(3)  .gallery-placeholder,
+  .gallery-item:nth-child(7)  .gallery-placeholder,
+  .gallery-item:nth-child(11) .gallery-placeholder,
+  .gallery-item:nth-child(15) .gallery-placeholder {
+    background: #323030;
+  }
+  .gallery-item:nth-child(4)  .gallery-placeholder,
+  .gallery-item:nth-child(8)  .gallery-placeholder,
+  .gallery-item:nth-child(12) .gallery-placeholder,
+  .gallery-item:nth-child(16) .gallery-placeholder,
+  .gallery-item:nth-child(17) .gallery-placeholder,
+  .gallery-item:nth-child(18) .gallery-placeholder {
+    background: #2a2f2a;
+  }
+
+  /* Overlay hover effect */
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.25s ease;
+  }
+
+  .gallery-overlay .ti {
+    font-size: 28px;
+    color: var(--color-white);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .gallery-placeholder:hover .gallery-overlay {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .gallery-placeholder:hover .gallery-overlay .ti {
+    opacity: 1;
+  }
+
+  /* --- Instagram Strip --- */
+  #instagram-strip {
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+  }
+
+  .insta-meta {
+    margin-bottom: 1.25rem;
+  }
+
+  .insta-meta .eyebrow {
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .insta-handle {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color var(--transition);
+  }
+
+  .insta-handle:hover { color: var(--color-gold); }
+
+  .insta-subtext {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-muted);
+    margin-top: 0.4rem;
+  }
+
+  .insta-grid {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+  }
+
+  .insta-tile {
+    width: calc(16.66% - 0.75rem);
+    aspect-ratio: 1 / 1;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 480px) {
+    .insta-tile {
+      width: calc(33.33% - 0.75rem);
+    }
+  }
+
+  .insta-tile-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.25s ease;
+  }
+
+  .insta-tile-overlay .ti {
+    font-size: 24px;
+    color: var(--color-white);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .insta-tile:hover .insta-tile-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .insta-tile:hover .insta-tile-overlay .ti {
+    opacity: 1;
+  }
   </style>
+
+  <!-- GLightbox CSS (Phase 4) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 </head>
 <body>
 
@@ -1685,6 +1921,276 @@
 
     <!-- PHASE 3 COMPLETE -->
 
+    <!-- INSERT AFTER PHASE 3 COMPLETE -->
+
+    <!-- =============================================
+         PHASE 4 — GALLERY SECTION
+    ============================================= -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <div class="section-inner">
+
+        <!-- Section header -->
+        <header class="gallery-header reveal">
+          <span class="eyebrow">Our Gallery</span>
+          <h2 class="section-h2" id="gallery-heading">Every Corner Tells a Story</h2>
+          <p class="gallery-subtext">From rooftop sunsets to plated masterpieces — a glimpse into The Spice Story experience.</p>
+        </header>
+
+        <!-- Filter tabs -->
+        <div class="gallery-tabs-wrap">
+          <div class="gallery-tabs" role="tablist" id="gallery-tablist" aria-label="Gallery category filter">
+            <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="all"      id="gtab-all">All</button>
+            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="food"     id="gtab-food">Food</button>
+            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="rooftop"  id="gtab-rooftop">Rooftop</button>
+            <button class="tab-btn"        role="tab" aria-selected="false" data-tab="interior" id="gtab-interior">Interior</button>
+          </div>
+        </div>
+
+        <!-- Masonry grid — 18 items -->
+        <div class="masonry-grid" id="gallery-grid">
+
+          <!-- 1. food / tall -->
+          <div class="gallery-item tall reveal" data-category="food">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — A signature dish" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 2. rooftop / medium -->
+          <div class="gallery-item medium reveal" data-category="rooftop">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Rooftop at dusk" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 3. interior / short -->
+          <div class="gallery-item short reveal" data-category="interior">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Interior ambiance" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 4. food / medium -->
+          <div class="gallery-item medium reveal" data-category="food">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Dal Baati Churma" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 5. rooftop / tall -->
+          <div class="gallery-item tall reveal" data-category="rooftop">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Rooftop panorama" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 6. interior / medium -->
+          <div class="gallery-item medium reveal" data-category="interior">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Dining hall" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 7. food / short -->
+          <div class="gallery-item short reveal" data-category="food">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Paneer Tikka" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 8. rooftop / short -->
+          <div class="gallery-item short reveal" data-category="rooftop">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Rooftop seating" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 9. interior / tall -->
+          <div class="gallery-item tall reveal" data-category="interior">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Private dining" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 10. food / tall -->
+          <div class="gallery-item tall reveal" data-category="food">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Gatte Ki Sabzi" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 11. rooftop / medium -->
+          <div class="gallery-item medium reveal" data-category="rooftop">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Golden hour rooftop" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 12. interior / short -->
+          <div class="gallery-item short reveal" data-category="interior">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Table setting" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 13. food / medium -->
+          <div class="gallery-item medium reveal" data-category="food">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Malpua Rabri" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 14. rooftop / tall -->
+          <div class="gallery-item tall reveal" data-category="rooftop">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Night view" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 15. interior / medium -->
+          <div class="gallery-item medium reveal" data-category="interior">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Lounge area" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 16. food / short -->
+          <div class="gallery-item short reveal" data-category="food">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Thandai" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 17. rooftop / medium -->
+          <div class="gallery-item medium reveal" data-category="rooftop">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Sunset rooftop" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+          <!-- 18. interior / tall -->
+          <div class="gallery-item tall reveal" data-category="interior">
+            <a href="#" class="glightbox" data-glightbox="title: The Spice Story — Fine dine setup" data-type="image">
+              <!-- CLIENT: update href to real image path before go-live -->
+              <div class="gallery-placeholder">
+                <div class="gallery-overlay"><i class="ti ti-zoom-in" aria-hidden="true"></i></div>
+              </div>
+            </a>
+          </div>
+
+        </div><!-- /masonry-grid -->
+
+      </div><!-- /section-inner -->
+
+      <!-- Instagram Strip -->
+      <div id="instagram-strip" class="reveal" aria-label="Follow us on Instagram">
+        <div class="section-inner">
+
+          <div class="insta-meta">
+            <span class="eyebrow">Follow Us</span>
+            <a href="https://instagram.com" class="insta-handle" target="_blank" rel="noopener noreferrer"
+               aria-label="The Spice Story on Instagram">@thespicestory</a>
+            <span class="insta-subtext">Tag us in your meals for a chance to be featured.</span>
+          </div>
+
+          <div class="insta-grid">
+
+            <!-- 1 -->
+            <div class="insta-tile">
+              <!-- CLIENT: embed real Instagram post -->
+              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            </div>
+
+            <!-- 2 -->
+            <div class="insta-tile">
+              <!-- CLIENT: embed real Instagram post -->
+              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            </div>
+
+            <!-- 3 -->
+            <div class="insta-tile">
+              <!-- CLIENT: embed real Instagram post -->
+              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            </div>
+
+            <!-- 4 -->
+            <div class="insta-tile">
+              <!-- CLIENT: embed real Instagram post -->
+              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            </div>
+
+            <!-- 5 -->
+            <div class="insta-tile">
+              <!-- CLIENT: embed real Instagram post -->
+              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            </div>
+
+            <!-- 6 -->
+            <div class="insta-tile">
+              <!-- CLIENT: embed real Instagram post -->
+              <div class="insta-tile-overlay"><i class="ti ti-brand-instagram" aria-hidden="true"></i></div>
+            </div>
+
+          </div><!-- /insta-grid -->
+
+        </div>
+      </div><!-- /instagram-strip -->
+
+    </section>
+
+    <!-- PHASE 4 COMPLETE -->
+
   </main>
 
   <!-- Schema.org JSON-LD â€” Local Business Rich Result -->
@@ -1918,6 +2424,48 @@
           filterMenu(btn.dataset.tab);
         });
       });
+
+    }());
+  </script>
+
+  <!-- GLightbox JS (Phase 4) -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Phase 4 JS: Gallery Filter + GLightbox Init -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* --- Gallery tab filter (scoped to #gallery-tablist) --- */
+      var galleryTabs  = document.querySelectorAll('#gallery-tablist .tab-btn');
+      var galleryItems = document.querySelectorAll('#gallery-grid .gallery-item');
+
+      function filterGallery(value) {
+        galleryItems.forEach(function (item) {
+          if (value === 'all' || item.dataset.category === value) {
+            item.classList.remove('hidden');
+          } else {
+            item.classList.add('hidden');
+          }
+        });
+      }
+
+      galleryTabs.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          galleryTabs.forEach(function (t) {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          filterGallery(btn.dataset.tab);
+        });
+      });
+
+      /* --- GLightbox init --- */
+      if (typeof GLightbox !== 'undefined') {
+        GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
+      }
 
     }());
   </script>
