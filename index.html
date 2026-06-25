@@ -11,33 +11,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Spice Story | Best Vegetarian Restaurant &amp; Rooftop Fine Dine in Jodhpur</title>
-  <meta name="description" content="Experience authentic vegetarian fine dining at The Spice Story, Jodhpur's top-rated rooftop restaurant. 4.7â˜… on Google. Book your table today. â‚¹400â€“600/person.">
-  <meta name="keywords" content="vegetarian restaurant Jodhpur, rooftop restaurant Jodhpur, fine dining Jodhpur, best veg restaurant Jodhpur, The Spice Story">
+  <meta name="description" content="The Spice Story — Jodhpur's best vegetarian rooftop fine dining restaurant. 4.7★ rated. Authentic Rajasthani cuisine. Book your table today. ₹400–600/person.">
+  <meta name="keywords" content="vegetarian restaurant Jodhpur, rooftop restaurant Jodhpur, fine dining Jodhpur, best veg restaurant Jodhpur, The Spice Story Ratanada">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.thespicestory.com/">
-
-  <!-- Open Graph -->
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
-  <meta property="og:description" content="4.7â˜… rated vegetarian fine dining on a rooftop in the heart of Jodhpur. Book a table today.">
+  <meta property="og:description" content="4.7★ vegetarian fine dining on a rooftop in the heart of Jodhpur. Book a table today.">
   <meta property="og:image" content="https://www.thespicestory.com/images/og-cover.webp">
   <meta property="og:url" content="https://www.thespicestory.com/">
   <meta property="og:locale" content="en_IN">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
-  <meta name="twitter:description" content="Best vegetarian fine dining in Jodhpur. 4.7â˜… Â· â‚¹400â€“600 Â· Rooftop.">
-
-  <!-- Geo tags (local SEO) -->
+  <meta name="twitter:description" content="Best vegetarian fine dining in Jodhpur. 4.7★ · ₹400–600 · Rooftop.">
   <meta name="geo.region" content="IN-RJ">
   <meta name="geo.placename" content="Jodhpur">
   <meta name="geo.position" content="26.279327;73.037535">
-  <meta name="ICBM" content="26.279327, 73.037535">
+  
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Tabler Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
@@ -1756,6 +1751,256 @@
     font-size: 14px;
     margin-bottom: 1.5rem;
   }
+
+  /* =============================================
+     PHASE 7 — FOOTER & FLOATING ELEMENTS
+  ============================================= */
+  footer {
+    background: #111111;
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 900px) {
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 480px) {
+    .footer-grid { grid-template-columns: 1fr; }
+  }
+
+  .footer-heading {
+    font-family: var(--font-body);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-gold);
+    margin-bottom: 1rem;
+  }
+
+  .footer-brand h3 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-gold);
+    margin: 0 0 0.5rem;
+  }
+
+  .footer-brand p {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 13px;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 1rem;
+  }
+
+  .footer-social a {
+    color: var(--color-muted);
+    font-size: 20px;
+    transition: color 0.2s ease;
+  }
+
+  .footer-social a:hover {
+    color: var(--color-gold);
+  }
+
+  .footer-links a,
+  .footer-contact a {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+  }
+
+  .footer-links a:hover,
+  .footer-contact a:hover {
+    color: var(--color-gold);
+  }
+
+  .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    line-height: 1.5;
+  }
+
+  .footer-contact-item i {
+    color: var(--color-gold);
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .footer-hours-item {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    margin-bottom: 8px;
+  }
+
+  .footer-divider {
+    height: 1px;
+    background: var(--color-border);
+    margin: 12px 0;
+    width: 40px;
+  }
+
+  .footer-info-pill {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-muted);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .veg-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4caf50;
+    display: inline-block;
+  }
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footer-bottom p {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--color-muted);
+    margin: 0;
+  }
+
+  /* --- Mobile FAB --- */
+  #mobile-fab {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--color-surface);
+    border-top: 2px solid var(--color-gold);
+    height: 64px;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
+  }
+
+  #mobile-fab.fab-visible {
+    display: flex;
+  }
+
+  @media (min-width: 769px) {
+    #mobile-fab { display: none !important; }
+  }
+
+  .fab-btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  .fab-btn i {
+    font-size: 20px;
+  }
+
+  .fab-call {
+    color: var(--color-white);
+    background: transparent;
+  }
+
+  .fab-reserve {
+    color: #1a1a1a;
+    background: var(--color-gold);
+  }
+
+  .fab-divider {
+    width: 1px;
+    background: var(--color-border);
+    height: 32px;
+    align-self: center;
+  }
+
+  /* --- Back to top --- */
+  #back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 998;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  #back-to-top:hover {
+    transform: translateY(-3px);
+  }
+
+  #back-to-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @media (max-width: 768px) {
+    #back-to-top {
+      bottom: 144px;
+    }
+    body.fab-active {
+      padding-bottom: 64px;
+    }
+  }
   </style>
 
   <!-- Swiper CSS (Phase 5) -->
@@ -3061,6 +3306,96 @@
 
   </main>
 
+  <!-- =============================================
+       PHASE 7 — FOOTER & FAB
+  ============================================= -->
+  <footer id="footer" aria-label="Site footer">
+    <div class="footer-grid">
+
+      <!-- Col 1: Brand -->
+      <div class="footer-brand">
+        <h3>The Spice Story</h3>
+        <p>Experience the original taste of Rajasthan.</p>
+        <div class="footer-social">
+          <!-- CLIENT: update social links -->
+          <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-youtube" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Google" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-google" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-links">
+        <h4 class="footer-heading">Quick Links</h4>
+        <a href="#hero">Home</a>
+        <a href="#our-story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#reserve">Reserve a Table</a>
+      </div>
+
+      <!-- Col 3: Contact -->
+      <div class="footer-contact">
+        <h4 class="footer-heading">Find Us</h4>
+        <div class="footer-contact-item">
+          <i class="ti ti-map-pin" aria-hidden="true"></i>
+          <span>3rd Floor, East Patel Nagar, Ratanada, Jodhpur — 342011</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ti ti-phone" aria-hidden="true"></i>
+          <a href="tel:+919001890329" aria-label="Call us">090018 90329</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ti ti-clock" aria-hidden="true"></i>
+          <span>Open daily 11 AM – 11:30 PM</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+          <a href="https://wa.me/919001890329" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp us">WhatsApp Us</a>
+        </div>
+      </div>
+
+      <!-- Col 4: Hours & Info -->
+      <div class="footer-hours">
+        <h4 class="footer-heading">Dining Hours</h4>
+        <p class="footer-hours-item">Lunch: 11:00 AM – 3:00 PM</p>
+        <p class="footer-hours-item">Dinner: 7:00 PM – 11:30 PM</p>
+        <p class="footer-hours-item" style="font-size: 12px; font-style: italic;">(all days including weekends)</p>
+        <div class="footer-divider"></div>
+        <p class="footer-info-pill">₹400 – ₹600 per person</p>
+        <p class="footer-info-pill"><span class="veg-dot" aria-hidden="true"></span> 100% Vegetarian</p>
+        <p class="footer-info-pill">Rooftop + Fine Dine</p>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2024 The Spice Story. All rights reserved.</p>
+      <p>Designed by Bildora</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Floating Action Bar -->
+  <div id="mobile-fab" role="complementary" aria-label="Quick actions">
+    <a href="tel:+919001890329" class="fab-btn fab-call">
+      <i class="ti ti-phone" aria-hidden="true"></i>
+      <span>Call Now</span>
+    </a>
+    <div class="fab-divider"></div>
+    <a href="#reserve" class="fab-btn fab-reserve">
+      <i class="ti ti-calendar-event" aria-hidden="true"></i>
+      <span>Reserve Table</span>
+    </a>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top">
+    <i class="ti ti-arrow-up" aria-hidden="true"></i>
+  </button>
+
   <!-- Schema.org JSON-LD â€” Local Business Rich Result -->
   <script type="application/ld+json">
   {
@@ -3297,7 +3632,7 @@
   </script>
 
   <!-- GLightbox JS (Phase 4) -->
-  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
 
   <!-- Phase 4 JS: Gallery Filter + GLightbox Init -->
   <script>
@@ -3339,7 +3674,7 @@
   </script>
 
   <!-- Swiper JS (Phase 5) -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
   <!-- Phase 5 JS: Reviews Swiper init -->
   <script>
@@ -3535,5 +3870,97 @@
 
     }());
   </script>
+
+  <!-- Phase 7: Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Spice Story",
+    "description": "Best vegetarian rooftop fine dining restaurant in Jodhpur, Rajasthan.",
+    "url": "https://www.thespicestory.com",
+    "telephone": "+919001890329",
+    "priceRange": "₹₹",
+    "servesCuisine": ["Indian", "Vegetarian", "Rajasthani"],
+    "menu": "https://www.thespicestory.com/menu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3rd Floor, Plot No. 3, East Patel Nagar, Circuit House Road",
+      "addressLocality": "Ratanada, Jodhpur",
+      "addressRegion": "Rajasthan",
+      "postalCode": "342011",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.279327,
+      "longitude": 73.037535
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "3308",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "11:00",
+      "closes": "23:30"
+    }],
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Rooftop Seating", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Fine Dining", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Dine-in", "value": true}
+    ]
+  }
+  </script>
+
+  <!-- Phase 7 JS: Back to Top & Mobile FAB logic -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* --- Back to top --- */
+      var btt = document.getElementById('back-to-top');
+      if (btt) {
+        window.addEventListener('scroll', function () {
+          if (window.scrollY > 400) {
+            btt.classList.add('visible');
+          } else {
+            btt.classList.remove('visible');
+          }
+        }, { passive: true });
+
+        btt.addEventListener('click', function () {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+
+      /* --- Mobile FAB --- */
+      var fab = document.getElementById('mobile-fab');
+      var reserveSection = document.getElementById('reserve');
+      
+      if (fab && reserveSection) {
+        window.addEventListener('scroll', function () {
+          var scrolled = window.scrollY > 300;
+          var reserveRect = reserveSection.getBoundingClientRect();
+          var reserveVisible = (reserveRect.top < window.innerHeight) && (reserveRect.bottom > 0);
+          
+          if (scrolled && !reserveVisible) {
+            fab.classList.add('fab-visible');
+            document.body.classList.add('fab-active');
+          } else {
+            fab.classList.remove('fab-visible');
+            document.body.classList.remove('fab-active');
+          }
+        }, { passive: true });
+      }
+
+    })();
+  </script>
+
+  <!-- PHASE 7 COMPLETE — WEBSITE BUILD DONE -->
 </body>
 </html>
+
