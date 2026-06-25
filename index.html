@@ -717,28 +717,19 @@
       margin-top: 1rem;
     }
 
-    /* Right column image placeholder */
-    .story-image-placeholder {
+    /* Right column image */
+    .story-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       aspect-ratio: 4 / 3;
       background: var(--color-surface);
       border: 1px solid var(--color-border);
       border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: relative;
+      display: block;
     }
 
-    .story-image-placeholder::after {
-      content: 'Photo coming soon';
-      font-family: var(--font-body);
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--color-border);
-      color: rgba(255, 255, 255, 0.2);
-    }
+
 
     @media (min-width: 768px) {
       .story-grid {
@@ -2246,10 +2237,8 @@
             </p>
           </div>
 
-          <!-- Right column: image placeholder -->
-          <!-- CLIENT: replace with interior/chef photo -->
-          <div class="story-image-placeholder reveal" style="transition-delay: 0.15s;"
-            aria-label="Interior photo of The Spice Story â€” coming soon"></div>
+          <!-- Right column: image -->
+          <img src="./galary/image%20one%20about.jpeg" alt="Interior of The Spice Story" class="story-image reveal" style="transition-delay: 0.15s;">
 
         </div>
       </div>
