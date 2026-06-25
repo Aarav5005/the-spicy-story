@@ -1,146 +1,907 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Primary Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Spice Story | Best Vegetarian Restaurant & Rooftop Fine Dine in Jodhpur</title>
-    <meta name="description" content="Experience authentic vegetarian fine dining at The Spice Story, Jodhpur's top-rated rooftop restaurant. 4.7★ on Google. Book your table today. ₹400–600/person.">
-    <meta name="keywords" content="vegetarian restaurant Jodhpur, rooftop restaurant Jodhpur, fine dining Jodhpur, best veg restaurant Jodhpur, The Spice Story">
-    <link rel="canonical" href="https://www.thespicestory.com/">
+  <!-- =============================================
+       THE SPICE STORY — Phase 1: Navbar + Hero + Info Bar
+       Built: Pure HTML5, CSS3, Vanilla JS
+       Fonts: Cormorant Garamond + Schibsted Grotesk
+  ============================================= -->
 
-    <!-- Open Graph (WhatsApp, Facebook preview) -->
-    <meta property="og:type" content="restaurant">
-    <meta property="og:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
-    <meta property="og:description" content="4.7★ rated vegetarian fine dining on a rooftop in the heart of Jodhpur. Book a table today.">
-    <meta property="og:image" content="https://www.thespicestory.com/images/og-cover.webp">
-    <meta property="og:url" content="https://www.thespicestory.com/">
-    <meta property="og:locale" content="en_IN">
+  <!-- Primary Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spice Story | Best Vegetarian Restaurant &amp; Rooftop Fine Dine in Jodhpur</title>
+  <meta name="description" content="Experience authentic vegetarian fine dining at The Spice Story, Jodhpur's top-rated rooftop restaurant. 4.7★ on Google. Book your table today. ₹400–600/person.">
+  <meta name="keywords" content="vegetarian restaurant Jodhpur, rooftop restaurant Jodhpur, fine dining Jodhpur, best veg restaurant Jodhpur, The Spice Story">
+  <link rel="canonical" href="https://www.thespicestory.com/">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
-    <meta name="twitter:description" content="Best vegetarian fine dining in Jodhpur. 4.7★ · ₹400–600 · Rooftop.">
-    <meta name="twitter:image" content="https://www.thespicestory.com/images/og-cover.webp">
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
+  <meta property="og:description" content="4.7★ rated vegetarian fine dining on a rooftop in the heart of Jodhpur. Book a table today.">
+  <meta property="og:image" content="https://www.thespicestory.com/images/og-cover.webp">
+  <meta property="og:url" content="https://www.thespicestory.com/">
+  <meta property="og:locale" content="en_IN">
 
-    <!-- Geo tags (local SEO) -->
-    <meta name="geo.region" content="IN-RJ">
-    <meta name="geo.placename" content="Jodhpur">
-    <meta name="geo.position" content="26.279327;73.037535">
-    <meta name="ICBM" content="26.279327, 73.037535">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Spice Story | Rooftop Fine Dine Jodhpur">
+  <meta name="twitter:description" content="Best vegetarian fine dining in Jodhpur. 4.7★ · ₹400–600 · Rooftop.">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Geo tags (local SEO) -->
+  <meta name="geo.region" content="IN-RJ">
+  <meta name="geo.placename" content="Jodhpur">
+  <meta name="geo.position" content="26.279327;73.037535">
+  <meta name="ICBM" content="26.279327, 73.037535">
 
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: 'var(--color-gold)',
-                        'gold-dark': 'var(--color-gold-dark)',
-                        bg: 'var(--color-bg)',
-                        surface: 'var(--color-surface)',
-                        muted: 'var(--color-muted)',
-                        red: 'var(--color-red)',
-                    },
-                    fontFamily: {
-                        display: ['var(--font-display)'],
-                        body: ['var(--font-body)'],
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/tokens.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages/home.css">
+  <!-- Tabler Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 
-    <!-- Third Party CSS (CDN) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-</head>
-<body class="bg-bg text-white font-body">
-
-    <!-- Header / Nav will go here -->
-
-    <main>
-        <!-- Phase 1: Hero Section -->
-    </main>
-
-    <!-- Footer will go here -->
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "The Spice Story",
-      "alternateName": "द स्पाइस स्टोरी",
-      "description": "Best vegetarian family restaurant with fine dine and rooftop in Jodhpur, Rajasthan.",
-      "url": "https://www.thespicestory.com",
-      "telephone": "+919001890329",
-      "priceRange": "₹₹",
-      "servesCuisine": ["Indian", "Vegetarian", "Continental"],
-      "menu": "https://www.thespicestory.com/menu",
-      "hasMap": "https://maps.google.com/?cid=YOUR_GOOGLE_CID",
-      "image": [
-        "https://www.thespicestory.com/images/gallery/rooftop.webp",
-        "https://www.thespicestory.com/images/gallery/interior.webp"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3rd Floor, Plot No. 3, East Patel Nagar, Circuit House Road",
-        "addressLocality": "Ratanada, Jodhpur",
-        "addressRegion": "Rajasthan",
-        "postalCode": "342011",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 26.279327,
-        "longitude": 73.037535
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.7",
-        "reviewCount": "3308",
-        "bestRating": "5"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "11:00",
-          "closes": "23:30"
-        }
-      ],
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "Rooftop Seating", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Fine Dining", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Dine-in", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "No Contact Delivery", "value": true }
-      ]
+  <style>
+    /* =============================================
+       BRAND TOKENS
+    ============================================= */
+    :root {
+      --color-gold:      #d39121;
+      --color-gold-dark: #b07818;
+      --color-bg:        #2a2a2a;
+      --color-surface:   #383632;
+      --color-white:     #ffffff;
+      --color-muted:     #a0a0a0;
+      --color-border:    rgba(255, 255, 255, 0.08);
+      --font-display:    'Cormorant Garamond', serif;
+      --font-body:       'Schibsted Grotesk', sans-serif;
+      --space-xs:        0.5rem;
+      --space-sm:        1rem;
+      --space-md:        2rem;
+      --space-lg:        4rem;
+      --space-xl:        8rem;
+      --radius-sm:       4px;
+      --transition:      0.2s ease;
     }
-    </script>
 
-    <!-- Third Party JS (CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js" defer></script>
-    <!-- EmailJS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    /* =============================================
+       RESET + BASE
+    ============================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <!-- Custom JS -->
-    <script src="js/main.js" defer></script>
-    <script src="js/menu.js" defer></script>
-    <script src="js/form.js" defer></script>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* =============================================
+       NAVBAR
+    ============================================= */
+    #main-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1.25rem var(--space-md);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.35s ease, backdrop-filter 0.35s ease, padding 0.3s ease;
+    }
+
+    /* Transparent at top, frosted glass on scroll */
+    #main-nav.nav-scrolled {
+      background: rgba(56, 54, 50, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 0.85rem var(--space-md);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    /* Logo */
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--color-gold);
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    /* Center nav links — hidden on mobile */
+    .nav-links {
+      display: none;
+      gap: 2.25rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-white);
+      opacity: 0.85;
+      letter-spacing: 0.3px;
+      transition: color var(--transition), opacity var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--color-gold);
+      transition: width var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--color-gold);
+      opacity: 1;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Right CTA */
+    .btn-nav {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 600;
+      color: #1a1a1a;
+      background: var(--color-gold);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 10px 22px;
+      cursor: pointer;
+      letter-spacing: 0.4px;
+      transition: background var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-nav:hover {
+      background: var(--color-gold-dark);
+    }
+
+    /* Hamburger (mobile) */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+      z-index: 1100;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-white);
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Hamburger open state */
+    .hamburger.is-open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .hamburger.is-open span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.is-open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* =============================================
+       MOBILE OVERLAY NAV
+    ============================================= */
+    #mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--color-bg);
+      z-index: 1050;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      transform: translateX(100%);
+      transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    #mobile-overlay.is-open {
+      transform: translateX(0);
+    }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .mobile-nav-links a {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 6vw, 2.5rem);
+      font-weight: 400;
+      color: var(--color-white);
+      transition: color var(--transition);
+    }
+
+    .mobile-nav-links a:hover {
+      color: var(--color-gold);
+    }
+
+    .mobile-cta {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+      background: var(--color-gold);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 14px 36px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: background var(--transition);
+    }
+
+    .mobile-cta:hover {
+      background: var(--color-gold-dark);
+    }
+
+    .mobile-tagline {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--color-muted);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* =============================================
+       HERO SECTION
+    ============================================= */
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* CLIENT: replace with real hero image */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      /* Placeholder gradient — client will replace with:
+         background-image: url('images/hero/rooftop-hero.webp');
+         background-size: cover;
+         background-position: center;
+      */
+      background: linear-gradient(
+        135deg,
+        #1a1208 0%,
+        #2d1f05 20%,
+        #1e1a12 40%,
+        #0d0c0a 60%,
+        #1a1510 80%,
+        #0f0d08 100%
+      );
+      z-index: 0;
+    }
+
+    /* Dark overlay on top of image */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    /* Subtle texture-like vignette */
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.4) 100%);
+      z-index: 2;
+    }
+
+    /* Hero content */
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      padding: 0 var(--space-md);
+      max-width: 860px;
+      width: 100%;
+    }
+
+    /* Eyebrow */
+    .hero-eyebrow {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Decorative line */
+    .hero-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-divider::before,
+    .hero-divider::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--color-gold);
+      opacity: 0.5;
+    }
+
+    .hero-divider-dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--color-gold);
+      opacity: 0.7;
+    }
+
+    /* H1 */
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(48px, 8vw, 88px);
+      font-weight: 400;
+      color: var(--color-white);
+      line-height: 1.05;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    /* Tagline */
+    .hero-tagline {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-gold);
+      margin-bottom: 1.75rem;
+      opacity: 0.95;
+    }
+
+    /* Star rating */
+    .hero-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .stars {
+      font-size: 16px;
+      color: var(--color-gold);
+      letter-spacing: 2px;
+    }
+
+    .rating-value {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-white);
+    }
+
+    .rating-count {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-muted);
+    }
+
+    /* CTA Buttons */
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+      background: var(--color-gold);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 14px 32px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .btn-primary:hover {
+      background: var(--color-gold-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-white);
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: var(--radius-sm);
+      padding: 14px 32px;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--color-white);
+      transform: translateY(-1px);
+    }
+
+    /* Scroll indicator */
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      opacity: 0.6;
+    }
+
+    .scroll-indicator span {
+      font-family: var(--font-body);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+
+    .scroll-arrow {
+      font-size: 20px;
+      color: var(--color-gold);
+      animation: bounce 1.8s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(7px); }
+    }
+
+    /* =============================================
+       QUICK INFO BAR
+    ============================================= */
+    #info-bar {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1rem var(--space-md);
+    }
+
+    .info-bar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 0.5rem;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.25rem 0;
+    }
+
+    /* Divider — visible on desktop only */
+    .info-item:not(:last-child) {
+      position: relative;
+    }
+
+    .info-item .ti {
+      font-size: 18px;
+      color: var(--color-gold);
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .info-item-text {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--color-muted);
+      white-space: nowrap;
+    }
+
+    .info-item-text strong {
+      color: var(--color-white);
+      font-weight: 500;
+    }
+
+    /* =============================================
+       REDUCED MOTION
+    ============================================= */
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-arrow { animation: none; }
+    }
+
+    /* =============================================
+       RESPONSIVE — TABLET & DESKTOP (min-width: 768px)
+    ============================================= */
+    @media (min-width: 768px) {
+      /* Show center nav links */
+      .nav-links {
+        display: flex;
+      }
+
+      /* Hide hamburger */
+      .hamburger {
+        display: none;
+      }
+
+      /* Info bar — single row with 5 columns */
+      .info-bar-inner {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+      }
+
+      /* Vertical dividers between items */
+      .info-item:not(:last-child) {
+        border-right: 1px solid var(--color-border);
+        padding-right: 1.5rem;
+        margin-right: 1.5rem;
+      }
+
+      .info-item {
+        justify-content: center;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content {
+        max-width: 960px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo" aria-label="The Spice Story — homepage">
+      The Spice Story
+    </a>
+
+    <!-- Center nav links (desktop) -->
+    <ul class="nav-links" role="list">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#reserve">Reserve</a></li>
+    </ul>
+
+    <!-- Right CTA (desktop) -->
+    <a href="#reserve" class="btn-nav" role="button" aria-label="Book a table at The Spice Story">
+      Book a Table
+    </a>
+
+    <!-- Hamburger (mobile) -->
+    <button
+      class="hamburger"
+      id="hamburger-btn"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-overlay"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
+  </nav>
+
+  <!-- =============================================
+       MOBILE OVERLAY NAV
+  ============================================= -->
+  <div id="mobile-overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <p class="mobile-tagline">Fine Dine · Rooftop · Jodhpur</p>
+
+    <ul class="mobile-nav-links" role="list">
+      <li><a href="#menu"    class="mobile-nav-link">Menu</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
+      <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+      <li><a href="#reserve" class="mobile-nav-link">Reserve</a></li>
+    </ul>
+
+    <a href="#reserve" class="mobile-cta" role="button">Book a Table</a>
+  </div>
+
+  <!-- =============================================
+       MAIN CONTENT
+  ============================================= -->
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+    ============================================= -->
+    <section id="hero" aria-label="Hero — The Spice Story rooftop restaurant Jodhpur">
+
+      <!-- CLIENT: replace .hero-bg with real hero image -->
+      <!-- <img src="images/hero/rooftop-hero.webp" alt="Rooftop dining at The Spice Story, Jodhpur" 
+           width="1920" height="1080" loading="eager" fetchpriority="high"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;"> -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <!-- Hero content -->
+      <div class="hero-content">
+
+        <!-- Eyebrow label -->
+        <span class="hero-eyebrow">Fine Dine · Rooftop · 100% Vegetarian</span>
+
+        <!-- Decorative divider -->
+        <div class="hero-divider" aria-hidden="true">
+          <span class="hero-divider-dot"></span>
+          <span class="hero-divider-dot"></span>
+          <span class="hero-divider-dot"></span>
+        </div>
+
+        <!-- H1 — one per page, SEO critical -->
+        <h1 class="hero-title">The Spice Story</h1>
+
+        <!-- Tagline -->
+        <p class="hero-tagline">Experience the original taste of Rajasthan.</p>
+
+        <!-- Star rating -->
+        <div class="hero-rating" aria-label="Rated 4.7 out of 5 stars based on 3308 reviews">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span class="rating-value">4.7</span>
+          <span class="rating-count">· 3,308 reviews</span>
+        </div>
+
+        <!-- CTA buttons -->
+        <div class="hero-ctas">
+          <a href="#reserve" class="btn-primary" role="button" id="hero-reserve-cta">
+            Reserve a Table
+          </a>
+          <a href="#menu" class="btn-outline" role="button" id="hero-menu-cta">
+            View Menu
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <i class="ti ti-chevron-down scroll-arrow"></i>
+      </div>
+
+    </section>
+
+    <!-- =============================================
+         QUICK INFO BAR
+    ============================================= -->
+    <section id="info-bar" aria-label="Restaurant quick info">
+      <div class="info-bar-inner">
+
+        <!-- Open hours -->
+        <div class="info-item">
+          <i class="ti ti-clock" aria-hidden="true"></i>
+          <span class="info-item-text">Open until <strong>11:30 PM</strong></span>
+        </div>
+
+        <!-- Location -->
+        <div class="info-item">
+          <i class="ti ti-map-pin" aria-hidden="true"></i>
+          <span class="info-item-text"><strong>Ratanada</strong>, Jodhpur</span>
+        </div>
+
+        <!-- Price -->
+        <div class="info-item">
+          <i class="ti ti-currency-rupee" aria-hidden="true"></i>
+          <span class="info-item-text"><strong>₹400–600</strong> per person</span>
+        </div>
+
+        <!-- Vegetarian -->
+        <div class="info-item">
+          <i class="ti ti-leaf" aria-hidden="true"></i>
+          <span class="info-item-text"><strong>100%</strong> Vegetarian</span>
+        </div>
+
+        <!-- Phone -->
+        <div class="info-item">
+          <i class="ti ti-phone" aria-hidden="true"></i>
+          <a href="tel:+919001890329" class="info-item-text" aria-label="Call The Spice Story">
+            <strong>090018 90329</strong>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Schema.org JSON-LD — Local Business Rich Result -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "The Spice Story",
+    "alternateName": "द स्पाइस स्टोरी",
+    "description": "Best vegetarian family restaurant with fine dine and rooftop in Jodhpur, Rajasthan.",
+    "url": "https://www.thespicestory.com",
+    "telephone": "+919001890329",
+    "priceRange": "₹₹",
+    "servesCuisine": ["Indian", "Vegetarian", "Continental"],
+    "menu": "https://www.thespicestory.com/menu",
+    "image": [
+      "https://www.thespicestory.com/images/gallery/rooftop.webp",
+      "https://www.thespicestory.com/images/gallery/interior.webp"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3rd Floor, Plot No. 3, East Patel Nagar, Circuit House Road",
+      "addressLocality": "Ratanada, Jodhpur",
+      "addressRegion": "Rajasthan",
+      "postalCode": "342011",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.279327,
+      "longitude": 73.037535
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "3308",
+      "bestRating": "5"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "11:00",
+        "closes": "23:30"
+      }
+    ],
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Rooftop Seating", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Fine Dining", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Dine-in", "value": true }
+    ]
+  }
+  </script>
+
+  <!-- =============================================
+       JAVASCRIPT — Sticky Nav + Mobile Hamburger
+       (Phase 1 only — no other JS)
+  ============================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* --- Sticky Nav Scroll Listener --- */
+      const nav = document.getElementById('main-nav');
+      const SCROLL_THRESHOLD = 80;
+
+      function handleNavScroll() {
+        if (window.scrollY > SCROLL_THRESHOLD) {
+          nav.classList.add('nav-scrolled');
+        } else {
+          nav.classList.remove('nav-scrolled');
+        }
+      }
+
+      window.addEventListener('scroll', handleNavScroll, { passive: true });
+      // Run once on load in case page is refreshed mid-scroll
+      handleNavScroll();
+
+      /* --- Mobile Hamburger Toggle --- */
+      const hamburgerBtn   = document.getElementById('hamburger-btn');
+      const mobileOverlay  = document.getElementById('mobile-overlay');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+      const mobileCta      = document.querySelector('.mobile-cta');
+
+      function openMenu() {
+        hamburgerBtn.classList.add('is-open');
+        mobileOverlay.classList.add('is-open');
+        hamburgerBtn.setAttribute('aria-expanded', 'true');
+        hamburgerBtn.setAttribute('aria-label', 'Close navigation menu');
+        document.body.style.overflow = 'hidden'; // prevent background scroll
+      }
+
+      function closeMenu() {
+        hamburgerBtn.classList.remove('is-open');
+        mobileOverlay.classList.remove('is-open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        hamburgerBtn.setAttribute('aria-label', 'Open navigation menu');
+        document.body.style.overflow = '';
+      }
+
+      hamburgerBtn.addEventListener('click', function () {
+        if (hamburgerBtn.classList.contains('is-open')) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Close overlay when a nav link is clicked
+      mobileNavLinks.forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      // Close overlay when CTA is clicked
+      if (mobileCta) {
+        mobileCta.addEventListener('click', closeMenu);
+      }
+
+      // Close overlay on Escape key (accessibility)
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && mobileOverlay.classList.contains('is-open')) {
+          closeMenu();
+          hamburgerBtn.focus();
+        }
+      });
+
+    }());
+  </script>
+
+  <!-- PHASE 1 COMPLETE -->
 </body>
 </html>
