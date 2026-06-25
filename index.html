@@ -1515,6 +1515,247 @@
     color: var(--color-muted);
     margin-bottom: 1rem;
   }
+
+  /* =============================================
+     PHASE 6 — RESERVATION SECTION
+  ============================================= */
+  #reserve {
+    padding: var(--space-lg) 0;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .reserve-header {
+    text-align: center;
+    margin-bottom: var(--space-md);
+  }
+
+  .reserve-subtext {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    max-width: 520px;
+    margin: 0.75rem auto 0;
+    line-height: 1.7;
+  }
+
+  /* Two-column grid */
+  .reserve-grid {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .reserve-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Form groups */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1.25rem;
+  }
+
+  .form-group label {
+    font-family: var(--font-body);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-muted);
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23a0a0a0' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+  }
+
+  .form-group select option {
+    background: var(--color-surface);
+    color: var(--color-white);
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--color-gold);
+    outline: none;
+  }
+
+  .form-group input.error,
+  .form-group select.error,
+  .form-group textarea.error {
+    border-color: #e53935;
+  }
+
+  .field-error {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: #e53935;
+    display: none;
+    margin-top: 2px;
+  }
+
+  .field-error.visible {
+    display: block;
+  }
+
+  /* Full-width button */
+  .btn-full {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0.5rem;
+  }
+
+  /* Seating toggle pills */
+  .seating-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 2px;
+  }
+
+  .seating-btn {
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-muted);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .seating-btn:hover {
+    border-color: rgba(211,145,33,0.5);
+    color: var(--color-white);
+  }
+
+  .seating-btn.active {
+    border-color: var(--color-gold);
+    background: var(--color-gold);
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+
+  /* Direct call text below submit */
+  .form-call-hint {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-muted);
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+
+  .form-call-hint a {
+    color: var(--color-gold);
+    text-decoration: none;
+  }
+
+  .form-call-hint a:hover {
+    text-decoration: underline;
+  }
+
+  /* Right column — contact info card */
+  .contact-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .contact-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .contact-row:first-child {
+    padding-top: 0;
+  }
+
+  .contact-icon {
+    font-size: 18px;
+    color: var(--color-gold);
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .contact-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    line-height: 1.5;
+  }
+
+  .contact-text a {
+    color: var(--color-gold);
+    text-decoration: none;
+  }
+
+  .contact-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* Booking success state */
+  .booking-success {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .booking-success h3 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--color-white);
+    margin: 1rem 0 0.5rem;
+  }
+
+  .booking-success p {
+    font-family: var(--font-body);
+    color: var(--color-muted);
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
   </style>
 
   <!-- Swiper CSS (Phase 5) -->
@@ -2628,6 +2869,196 @@
 
     <!-- PHASE 5 COMPLETE -->
 
+    <!-- INSERT AFTER PHASE 5 COMPLETE -->
+
+    <!-- =============================================
+         PHASE 6 — RESERVATION SECTION
+    ============================================= -->
+    <section id="reserve" aria-labelledby="reserve-heading">
+      <div class="section-inner">
+
+        <!-- Section header -->
+        <header class="reserve-header reveal">
+          <span class="eyebrow">Reserve a Table</span>
+          <h2 class="section-h2" id="reserve-heading">Join Us for an Unforgettable Meal</h2>
+          <p class="reserve-subtext">Book your table at The Spice Story. We recommend reserving in advance for rooftop seating.</p>
+        </header>
+
+        <!-- Two-column grid -->
+        <div class="reserve-grid">
+
+          <!-- LEFT: Booking form -->
+          <div class="reserve-form-col reveal">
+            <form id="booking-form" novalidate aria-label="Table reservation form">
+
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name"
+                       placeholder="Your full name" required
+                       autocomplete="name" aria-required="true">
+                <span class="field-error" id="name-error" role="alert">Please enter your full name.</span>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="+91 98765 43210" required
+                       pattern="[6-9][0-9]{9}"
+                       autocomplete="tel" aria-required="true">
+                <span class="field-error" id="phone-error" role="alert">Please enter a valid 10-digit Indian mobile number.</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email Address <span style="color: var(--color-muted); font-size: 10px;">(optional)</span></label>
+                <input type="email" id="email" name="email"
+                       placeholder="your@email.com"
+                       autocomplete="email">
+                <span class="field-error" id="email-error" role="alert">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Date -->
+              <div class="form-group">
+                <label for="date">Date of Visit <span aria-hidden="true">*</span></label>
+                <input type="date" id="date" name="date" required aria-required="true">
+                <span class="field-error" id="date-error" role="alert">Please select a date.</span>
+              </div>
+
+              <!-- Time slot -->
+              <div class="form-group">
+                <label for="time">Time Slot <span aria-hidden="true">*</span></label>
+                <select id="time" name="time" required aria-required="true">
+                  <option value="" disabled selected>Select a time slot</option>
+                  <optgroup label="Lunch">
+                    <option value="12:00 PM – Lunch">12:00 PM – Lunch</option>
+                    <option value="01:00 PM – Lunch">01:00 PM – Lunch</option>
+                    <option value="02:00 PM – Lunch">02:00 PM – Lunch</option>
+                  </optgroup>
+                  <optgroup label="Dinner">
+                    <option value="07:00 PM – Dinner">07:00 PM – Dinner</option>
+                    <option value="07:30 PM – Dinner">07:30 PM – Dinner</option>
+                    <option value="08:00 PM – Dinner">08:00 PM – Dinner</option>
+                    <option value="08:30 PM – Dinner">08:30 PM – Dinner</option>
+                    <option value="09:00 PM – Dinner">09:00 PM – Dinner</option>
+                    <option value="09:30 PM – Dinner">09:30 PM – Dinner</option>
+                  </optgroup>
+                </select>
+                <span class="field-error" id="time-error" role="alert">Please select a time slot.</span>
+              </div>
+
+              <!-- Guests -->
+              <div class="form-group">
+                <label for="guests">Number of Guests <span aria-hidden="true">*</span></label>
+                <select id="guests" name="guests" required aria-required="true">
+                  <option value="" disabled selected>Select number of guests</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests</option>
+                  <option value="9">9 Guests</option>
+                  <option value="10">10 Guests</option>
+                  <option value="10+ (call us)">10+ (call us)</option>
+                </select>
+                <span class="field-error" id="guests-error" role="alert">Please select the number of guests.</span>
+              </div>
+
+              <!-- Seating preference -->
+              <div class="form-group">
+                <label>Seating Preference</label>
+                <div class="seating-group" role="group" aria-label="Seating preference">
+                  <button type="button" class="seating-btn" data-value="Rooftop"
+                          aria-pressed="false" id="seat-rooftop">Rooftop</button>
+                  <button type="button" class="seating-btn" data-value="Fine Dine Hall"
+                          aria-pressed="false" id="seat-fine">Fine Dine Hall</button>
+                  <button type="button" class="seating-btn active" data-value="No Preference"
+                          aria-pressed="true" id="seat-nopref">No Preference</button>
+                </div>
+                <input type="hidden" id="seating" name="seating" value="No Preference">
+              </div>
+
+              <!-- Special request -->
+              <div class="form-group">
+                <label for="message">Special Request <span style="color: var(--color-muted); font-size: 10px;">(optional)</span></label>
+                <textarea id="message" name="message" rows="3"
+                          placeholder="Dietary needs, occasion, special arrangements..."></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="btn-primary btn-full" id="booking-submit">
+                <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+                Confirm Reservation via WhatsApp
+              </button>
+
+              <p class="form-call-hint">
+                Or call us directly:
+                <a href="tel:+919001890329" aria-label="Call The Spice Story at 090018 90329">090018 90329</a>
+              </p>
+
+            </form>
+          </div><!-- /reserve-form-col -->
+
+          <!-- RIGHT: Contact info + map -->
+          <div class="reserve-info-col reveal">
+
+            <!-- Contact info card -->
+            <div class="contact-card">
+
+              <div class="contact-row">
+                <i class="ti ti-map-pin contact-icon" aria-hidden="true"></i>
+                <span class="contact-text">3rd Floor, Plot No. 3, East Patel Nagar,
+                  Circuit House Rd, Ratanada, Jodhpur — 342011</span>
+              </div>
+
+              <div class="contact-row">
+                <i class="ti ti-phone contact-icon" aria-hidden="true"></i>
+                <span class="contact-text">
+                  <a href="tel:+919001890329" aria-label="Call The Spice Story">090018 90329</a>
+                </span>
+              </div>
+
+              <div class="contact-row">
+                <i class="ti ti-clock contact-icon" aria-hidden="true"></i>
+                <span class="contact-text">Open daily: 11:00 AM – 11:30 PM</span>
+              </div>
+
+              <div class="contact-row">
+                <i class="ti ti-brand-whatsapp contact-icon" aria-hidden="true"></i>
+                <span class="contact-text">
+                  <a href="https://wa.me/919001890329" target="_blank" rel="noopener noreferrer"
+                     aria-label="Chat with The Spice Story on WhatsApp">Chat on WhatsApp</a>
+                </span>
+              </div>
+
+            </div><!-- /contact-card -->
+
+            <!-- Embedded Google Map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.123!2d73.037535!3d26.279327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418d1100aadcdb%3A0xba448337948070c8!2sThe%20Spice%20Story!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%"
+              height="220"
+              style="border: 1px solid var(--color-border); border-radius: 4px; filter: grayscale(30%) contrast(1.1); display: block;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="The Spice Story location on Google Maps"
+              aria-label="Embedded Google Map showing The Spice Story location">
+            </iframe>
+
+          </div><!-- /reserve-info-col -->
+
+        </div><!-- /reserve-grid -->
+
+      </div>
+    </section>
+
+    <!-- PHASE 6 COMPLETE -->
+
   </main>
 
   <!-- Schema.org JSON-LD â€” Local Business Rich Result -->
@@ -2948,6 +3379,159 @@
       }
 
       initReviewsSwiper();
+
+    }());
+  </script>
+
+  <!-- Phase 6 JS: Reservation form — validation, seating toggle, WhatsApp submit -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── Set minimum date to today ── */
+      var dateInput = document.getElementById('date');
+      if (dateInput) {
+        dateInput.min = new Date().toISOString().split('T')[0];
+      }
+
+      /* ── Seating toggle pills ── */
+      var seatingBtns = document.querySelectorAll('.seating-btn');
+      var seatingInput = document.getElementById('seating');
+
+      seatingBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          seatingBtns.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-pressed', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-pressed', 'true');
+          if (seatingInput) seatingInput.value = btn.dataset.value;
+        });
+      });
+
+      /* ── Inline validation helpers ── */
+      function showError(inputId, errorId) {
+        var input = document.getElementById(inputId);
+        var error = document.getElementById(errorId);
+        if (input)  input.classList.add('error');
+        if (error)  error.classList.add('visible');
+      }
+
+      function clearError(inputId, errorId) {
+        var input = document.getElementById(inputId);
+        var error = document.getElementById(errorId);
+        if (input)  input.classList.remove('error');
+        if (error)  error.classList.remove('visible');
+      }
+
+      /* Clear error on user input */
+      ['name', 'phone', 'date', 'time', 'guests'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) {
+          el.addEventListener('input', function () { clearError(id, id + '-error'); });
+          el.addEventListener('change', function () { clearError(id, id + '-error'); });
+        }
+      });
+
+      /* ── Form submit ── */
+      var form = document.getElementById('booking-form');
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          /* Reset all errors */
+          ['name', 'phone', 'date', 'time', 'guests'].forEach(function (id) {
+            clearError(id, id + '-error');
+          });
+
+          var hasError = false;
+          var firstErrorEl = null;
+
+          /* Validate name */
+          var nameVal = (document.getElementById('name').value || '').trim();
+          if (!nameVal) {
+            showError('name', 'name-error');
+            hasError = true;
+            if (!firstErrorEl) firstErrorEl = document.getElementById('name');
+          }
+
+          /* Validate phone — Indian mobile pattern */
+          var phoneVal = (document.getElementById('phone').value || '').replace(/\s+/g, '');
+          var phonePattern = /^[6-9][0-9]{9}$/;
+          if (!phoneVal || !phonePattern.test(phoneVal)) {
+            showError('phone', 'phone-error');
+            hasError = true;
+            if (!firstErrorEl) firstErrorEl = document.getElementById('phone');
+          }
+
+          /* Validate date */
+          var dateVal = document.getElementById('date').value;
+          if (!dateVal) {
+            showError('date', 'date-error');
+            hasError = true;
+            if (!firstErrorEl) firstErrorEl = document.getElementById('date');
+          }
+
+          /* Validate time */
+          var timeVal = document.getElementById('time').value;
+          if (!timeVal) {
+            showError('time', 'time-error');
+            hasError = true;
+            if (!firstErrorEl) firstErrorEl = document.getElementById('time');
+          }
+
+          /* Validate guests */
+          var guestsVal = document.getElementById('guests').value;
+          if (!guestsVal) {
+            showError('guests', 'guests-error');
+            hasError = true;
+            if (!firstErrorEl) firstErrorEl = document.getElementById('guests');
+          }
+
+          /* Scroll to first error */
+          if (hasError) {
+            if (firstErrorEl) {
+              firstErrorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            return;
+          }
+
+          /* Build WhatsApp message */
+          var seatingVal  = (seatingInput ? seatingInput.value : 'No Preference');
+          var messageVal  = (document.getElementById('message').value || '').trim();
+
+          /* Format date nicely */
+          var dateFormatted = dateVal;
+          try {
+            dateFormatted = new Date(dateVal).toLocaleDateString('en-IN', {
+              weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+            });
+          } catch (err) { /* fallback to raw value */ }
+
+          var msg = 'Hello! I\u2019d like to reserve a table at The Spice Story.\n\n' +
+                    'Name: ' + nameVal + '\n' +
+                    'Phone: ' + phoneVal + '\n' +
+                    'Date: ' + dateFormatted + '\n' +
+                    'Time: ' + timeVal + '\n' +
+                    'Guests: ' + guestsVal + '\n' +
+                    'Seating: ' + seatingVal + '\n' +
+                    'Special Request: ' + (messageVal || 'None') + '\n\n' +
+                    'Please confirm my booking. Thank you!';
+
+          var waURL = 'https://wa.me/919001890329?text=' + encodeURIComponent(msg);
+          window.open(waURL, '_blank');
+
+          /* Show success state */
+          form.innerHTML =
+            '<div class="booking-success">' +
+              '<i class="ti ti-circle-check" style="font-size:48px;color:var(--color-gold);" aria-hidden="true"></i>' +
+              '<h3>Reservation Sent!</h3>' +
+              '<p>Your table request has been sent via WhatsApp. We\u2019ll confirm shortly.</p>' +
+              '<button onclick="location.reload()" class="btn-outline">Make Another Booking</button>' +
+            '</div>';
+        });
+      }
 
     }());
   </script>
