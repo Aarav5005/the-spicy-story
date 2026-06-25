@@ -1314,7 +1314,211 @@
   .insta-tile:hover .insta-tile-overlay .ti {
     opacity: 1;
   }
+
+  /* =============================================
+     PHASE 5 — REVIEWS SECTION
+  ============================================= */
+  #reviews {
+    padding: var(--space-lg) 0;
+    background: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .reviews-header {
+    text-align: center;
+    margin-bottom: var(--space-md);
+  }
+
+  .reviews-subtext {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    max-width: 520px;
+    margin: 0.75rem auto 0.75rem;
+    line-height: 1.7;
+  }
+
+  /* Google rating badge */
+  .google-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+
+  .g-logo {
+    width: 18px;
+    height: 18px;
+    background: #4285f4;
+    color: var(--color-white);
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: var(--font-body);
+  }
+
+  .badge-rating-text {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-white);
+  }
+
+  .badge-stars {
+    color: var(--color-gold);
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .badge-count {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--color-muted);
+  }
+
+  /* --- Swiper carousel --- */
+  .reviews-swiper {
+    padding-bottom: 48px !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+
+  /* Swiper nav arrows */
+  .reviews-swiper .swiper-button-prev,
+  .reviews-swiper .swiper-button-next {
+    color: var(--color-gold);
+    width: 36px;
+    height: 36px;
+  }
+
+  .reviews-swiper .swiper-button-prev::after,
+  .reviews-swiper .swiper-button-next::after {
+    font-size: 18px;
+  }
+
+  /* Swiper pagination dots */
+  .reviews-swiper .swiper-pagination-bullet {
+    background: var(--color-muted);
+    opacity: 0.5;
+  }
+
+  .reviews-swiper .swiper-pagination-bullet-active {
+    background: var(--color-gold);
+    opacity: 1;
+  }
+
+  /* --- Review card --- */
+  .review-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-top: 2px solid var(--color-gold);
+    border-radius: 4px;
+    padding: 1.75rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Card top row: avatar + name + date */
+  .review-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .review-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    color: #1a1a1a;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .review-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .review-name-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .review-name {
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-white);
+  }
+
+  .review-verified {
+    font-size: 14px;
+    color: #4285f4;
+    line-height: 1;
+  }
+
+  .review-date {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--color-muted);
+  }
+
+  /* Stars */
+  .review-stars {
+    color: var(--color-gold);
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  /* Review body text */
+  .review-text {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--color-muted);
+    flex: 1;
+  }
+
+  /* --- Write a review CTA --- */
+  .reviews-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .reviews-cta-hint {
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: var(--color-muted);
+    margin-bottom: 1rem;
+  }
   </style>
+
+  <!-- Swiper CSS (Phase 5) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <!-- GLightbox CSS (Phase 4) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
@@ -2191,6 +2395,239 @@
 
     <!-- PHASE 4 COMPLETE -->
 
+    <!-- INSERT AFTER PHASE 4 COMPLETE -->
+
+    <!-- =============================================
+         PHASE 5 — REVIEWS SECTION
+    ============================================= -->
+    <section id="reviews" aria-labelledby="reviews-heading">
+      <div class="section-inner">
+
+        <!-- Section header -->
+        <header class="reviews-header reveal">
+          <span class="eyebrow">What Guests Say</span>
+          <h2 class="section-h2" id="reviews-heading">4.7 Stars and Counting</h2>
+          <p class="reviews-subtext">Over 3,308 guests have shared their experience. Here are a few of their stories.</p>
+
+          <!-- Google rating badge -->
+          <a href="https://maps.google.com" class="google-badge" target="_blank" rel="noopener noreferrer"
+             aria-label="4.7 stars on Google Reviews — 3,308 reviews">
+            <span class="g-logo" aria-hidden="true">G</span>
+            <span class="badge-rating-text">4.7 on Google Reviews</span>
+            <span class="badge-stars" aria-hidden="true">★★★★★</span>
+            <span class="badge-count">(3,308 reviews)</span>
+          </a>
+        </header>
+
+        <!-- Swiper carousel -->
+        <div class="swiper reviews-swiper" aria-label="Guest reviews carousel">
+          <div class="swiper-wrapper">
+
+            <!-- Review 1: Priya Sharma -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">PS</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Priya Sharma</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">March 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“The rooftop ambiance is unlike anything in Jodhpur. We came for a birthday dinner and left with memories for a lifetime. The paneer tikka and dal baati churma were absolutely divine.”</p>
+              </div>
+            </div>
+
+            <!-- Review 2: Rahul Mehta -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">RM</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Rahul Mehta</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">January 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“Best vegetarian fine dining experience I’ve had in Rajasthan. The Shahi Paneer melted in my mouth and the service was impeccable. Will definitely return on my next visit to Jodhpur.”</p>
+              </div>
+            </div>
+
+            <!-- Review 3: Ananya Joshi -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">AJ</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Ananya Joshi</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">February 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“The Blueberry Cheesecake alone is worth the visit. Stunning rooftop view, attentive staff, and food that genuinely surprises you. The Thandai is a must-order.”</p>
+              </div>
+            </div>
+
+            <!-- Review 4: Vikram Singh -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">VS</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Vikram Singh</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">December 2023</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“Celebrated our anniversary here and the staff went above and beyond. The ambiance is sophisticated yet warm. Ker Sangri was a revelation — never had it prepared this well.”</p>
+              </div>
+            </div>
+
+            <!-- Review 5: Meena Agarwal -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">MA</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Meena Agarwal</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">April 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“A hidden gem in Ratanada. The Gatte Ki Sabzi took me back to my grandmother’s kitchen, but elevated. The rooftop at sunset is breathtaking. Highly recommended for families.”</p>
+              </div>
+            </div>
+
+            <!-- Review 6: Arjun Patel -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">AP</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Arjun Patel</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">November 2023</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“Brought my parents here and they couldn’t stop talking about it for weeks. The Dal Baati Churma is the most authentic I’ve tasted outside a home kitchen. Exceptional experience.”</p>
+              </div>
+            </div>
+
+            <!-- Review 7: Sunita Rathore -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">SR</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Sunita Rathore</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">March 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“The interiors are gorgeous and the food matches the setting perfectly. Malpua Rabri for dessert is life-changing. Staff remembered our names by the second course — that’s class.”</p>
+              </div>
+            </div>
+
+            <!-- Review 8: Deepak Verma -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">DV</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Deepak Verma</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">February 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“Took a business client here for dinner. The food quality and presentation impressed everyone. Paneer Lababdar and Veg Seekh Kabab were standouts. A restaurant that punches above its weight.”</p>
+              </div>
+            </div>
+
+            <!-- Review 9: Kavya Nair -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">KN</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Kavya Nair</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">January 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“Jodhpur’s best kept secret. The rooftop view of the city lights is magical. Food is consistently excellent — we’ve visited four times and it never disappoints. The Masala Chaas is refreshing.”</p>
+              </div>
+            </div>
+
+            <!-- Review 10: Rohit Bhatt -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <div class="review-top">
+                  <div class="review-avatar" aria-hidden="true">RB</div>
+                  <div class="review-meta">
+                    <div class="review-name-row">
+                      <span class="review-name">Rohit Bhatt</span>
+                      <i class="ti ti-brand-google review-verified" aria-label="Verified Google review"></i>
+                    </div>
+                    <span class="review-date">April 2024</span>
+                  </div>
+                </div>
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <p class="review-text">“Exceptional in every way. The Kadai Paneer had the perfect spice balance and the Dahi Ke Sholay were crispy perfection. Service is warm and genuine. This is what fine dining should feel like.”</p>
+              </div>
+            </div>
+
+          </div><!-- /swiper-wrapper -->
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev" aria-label="Previous review"></div>
+          <div class="swiper-button-next" aria-label="Next review"></div>
+        </div><!-- /reviews-swiper -->
+
+        <!-- Write a Review CTA -->
+        <!-- CLIENT: update href to direct Google review link -->
+        <div class="reviews-cta reveal">
+          <p class="reviews-cta-hint">Had a great experience?</p>
+          <a href="https://maps.google.com" class="btn-outline" role="button"
+             target="_blank" rel="noopener noreferrer"
+             id="write-review-cta"
+             aria-label="Write a review on Google">
+            <i class="ti ti-brand-google" aria-hidden="true"></i>
+            Write a Review on Google
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PHASE 5 COMPLETE -->
+
   </main>
 
   <!-- Schema.org JSON-LD â€” Local Business Rich Result -->
@@ -2466,6 +2903,51 @@
       if (typeof GLightbox !== 'undefined') {
         GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true });
       }
+
+    }());
+  </script>
+
+  <!-- Swiper JS (Phase 5) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Phase 5 JS: Reviews Swiper init -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* Wait for Swiper to be available (loaded via CDN above) */
+      function initReviewsSwiper() {
+        if (typeof Swiper === 'undefined') {
+          setTimeout(initReviewsSwiper, 80);
+          return;
+        }
+
+        new Swiper('.reviews-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+            pauseOnMouseEnter: true
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next'
+          },
+          breakpoints: {
+            640:  { slidesPerView: 1 },
+            768:  { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 24 }
+          }
+        });
+      }
+
+      initReviewsSwiper();
 
     }());
   </script>
